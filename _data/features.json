@@ -1,0 +1,29 @@
+[
+  {
+    "title": "FRA Certified (RAPS)",
+    "description": "Certified Regulatory Affairs professional with expertise across FDA, EMA, and ICH regulatory frameworks.",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "3+ Years in Pharmacovigilance",
+    "description": "Hands-on experience in ICSR processing, MedDRA coding, aggregate safety reporting, and signal analysis.",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "AI-Driven Regulatory Tools",
+    "description": "Leveraged REGAIN and AI Navigator to reduce document drafting timelines by ~95% versus manual processes.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]
