@@ -1,8 +1,5 @@
 .logo {
-  display: none;
-  @include media-breakpoint-up(sm) {
-    display: block;
-  }
+  display: block;
   img {
     max-width: unset;
   }

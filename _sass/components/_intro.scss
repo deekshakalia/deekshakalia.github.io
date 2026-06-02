@@ -11,31 +11,36 @@
   }
   h1 {
     color: $black;
-    font-size: 42px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
     @include media-breakpoint-up(md) {
       width: 80%;
-      font-size: 48px;
+      font-size: 42px;
     }
     @include media-breakpoint-up(lg) {
       font-size: 50px;
     }
   }
   h2 {
-    width: 80%;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    margin-bottom: 30px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
     color: $black;
     font-family: $font-family-base;
+    @include media-breakpoint-up(md) {
+      width: 80%;
+      font-size: 1.2rem;
+    }
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: light;
-    line-height: 1.5;
+    line-height: 1.6;
     color: $steel;
     @include media-breakpoint-up(md) {
+      font-size: 1.2rem;
       width: 80%;
     }
   }

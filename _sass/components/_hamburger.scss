@@ -1,7 +1,7 @@
 .hamburger {
   padding: 10px 0 10px 10px;
   outline: none;
-  z-index: 30;
+  z-index: 300;
   cursor: pointer;
   @include media-breakpoint-up(md) {
     display: none;

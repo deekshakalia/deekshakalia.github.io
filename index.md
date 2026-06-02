@@ -10,7 +10,6 @@ show_call_box: false
 
 # Deeksha Kalia
 
-MS Regulatory Affairs · Northeastern University
-FRA Certified (RAPS)
+MS Regulatory Affairs · Northeastern University<br>FRA Certified (RAPS)
 
 Regulatory Affairs professional with 3+ years of hands-on experience in pharmacovigilance, drug safety, and regulatory documentation. Bridging clinical expertise in dentistry with strategic, globally-informed regulatory compliance — across FDA, EMA, and ICH frameworks.
