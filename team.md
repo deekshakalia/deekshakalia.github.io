@@ -1,6 +1,6 @@
 ---
 title: Experience
-layout: teams
+layout: experience-list
 description: Professional experience of Dr. Deeksha Kalia
 permalink: "/experience/"
 intro_image_absolute: true

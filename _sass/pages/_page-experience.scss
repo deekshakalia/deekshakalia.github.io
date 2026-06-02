@@ -1,0 +1,138 @@
+.page-experience {
+  .intro-small {
+    background-color: $white-offset;
+    border-bottom: 1px solid darken($white-offset, 5%);
+    h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+    p { color: $steel; }
+  }
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, $primary, lighten($primary, 30%));
+  }
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+    .experience-card {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.experience-marker {
+  position: absolute;
+  left: -2rem;
+  top: 18px;
+}
+
+.experience-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $primary;
+  border: 3px solid $white;
+  box-shadow: 0 0 0 2px $primary;
+}
+
+.experience-card {
+  background: $white;
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.6rem 1.8rem;
+  padding-bottom: 1.8rem;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $white-offset;
+  padding-bottom: 1rem;
+}
+
+.experience-company-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.experience-initials {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 10px;
+  background-color: $primary;
+  color: $white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: $font-family-heading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-company {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+  font-family: $font-family-heading;
+}
+
+.experience-role {
+  font-size: 0.9rem;
+  color: $primary;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.experience-body {
+  font-size: 0.95rem;
+  color: $steel;
+  line-height: 1.7;
+
+  // The first paragraph is the date/location — style it distinctly
+  p:first-child {
+    font-size: 0.85rem;
+    color: lighten($steel, 10%);
+    font-style: italic;
+    margin-bottom: 0.8rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin: 0;
+    li {
+      margin-bottom: 0.4rem;
+      &::marker {
+        color: $primary;
+      }
+    }
+  }
+
+  strong {
+    color: $black;
+    font-weight: 600;
+  }
+}

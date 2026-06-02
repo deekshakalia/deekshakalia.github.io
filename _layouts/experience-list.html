@@ -1,0 +1,45 @@
+---
+layout: default
+bodyClass: "page-experience"
+---
+
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-4 pb-10">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-9">
+      <div class="experience-timeline">
+        {% assign experiences = site.team | sort: "weight" %}
+        {% for exp in experiences %}
+        <div class="experience-item">
+          <div class="experience-marker">
+            <div class="experience-dot"></div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-company-wrap">
+                <div class="experience-initials">{{ exp.title | slice: 0 }}</div>
+                <div>
+                  <h2 class="experience-company">{{ exp.title }}</h2>
+                  <p class="experience-role">{{ exp.jobtitle }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="experience-body">
+              {{ exp.content | markdownify }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

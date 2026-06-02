@@ -4,13 +4,12 @@ date: 2024-09-01
 weight: 2
 ---
 
-Preparation and review of periodic aggregate safety reports in compliance with global regulatory requirements.
+Preparation and review of periodic aggregate safety reports in compliance with FDA, ICH, and EMA requirements.
 
 ## What I Do
 
-- Preparation and review of Periodic Adverse Drug Experience Reports (PADERs)
-- Preparation of Periodic Safety Update Reports (PSURs)
-- Clinical Overview and abbreviated Clinical Overview documents
-- AdCO and other nonclinical overview documents
-- Weekly literature screening using PubMed for assigned molecules
-- Data validation and quality review for aggregate datasets
+- Reviewed 50+ PADERs including FDA Form 356h, cover letters, and line listings; reduced review time by 25% via Veeva RIM
+- Authored Periodic Safety Update Reports (PSURs) and Periodic Adverse Drug Experience Reports (PADERs)
+- Managed submission workflows and version control through Veeva RIM
+- Authored Module 2 summaries: Clinical Overviews (CO), Nonclinical Overviews (NCO), and Clinical Expert Statements in eCTD format
+- Systematic PubMed literature reviews for safety evaluations and signal detection

@@ -12,4 +12,4 @@ show_call_box: false
 
 MS Regulatory Affairs · Northeastern University<br>FRA Certified (RAPS)
 
-Regulatory Affairs professional with 3+ years of hands-on experience in pharmacovigilance, drug safety, and regulatory documentation. Bridging clinical expertise in dentistry with strategic, globally-informed regulatory compliance — across FDA, EMA, and ICH frameworks.
+Regulatory Affairs professional with 3+ years of experience in pharmacovigilance, drug safety, and regulatory documentation across FDA, EMA, and ICH frameworks — combining clinical expertise with AI-driven regulatory writing to deliver faster, compliant submissions.

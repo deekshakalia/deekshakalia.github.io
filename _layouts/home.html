@@ -41,6 +41,53 @@ bodyClass: "page-home"
   </div>
 </div>
 
+{% if site.data.companies %}
+<div class="strip strip-grey companies-strip">
+  <div class="container pt-5 pb-5">
+    <h4 class="companies-title">Experience at</h4>
+    <div class="companies-logos">
+      {% for company in site.data.companies %}
+      <a href="{{ company.url }}" target="_blank" rel="noopener" class="company-badge">{{ company.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if site.data.community %}
+<div class="strip community-strip">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <h2 class="community-title">In the Community</h2>
+    <p class="community-subtitle">Conferences, volunteering, and milestones — staying active in the regulatory world.</p>
+    <div class="row">
+      {% for item in site.data.community %}
+      <div class="col-12 col-md-4 mb-3">
+        <div class="community-card">
+          <div class="community-card-header">
+            <div class="community-card-title">{{ item.title }}</div>
+            <span class="community-card-date">{{ item.date }}</span>
+          </div>
+          <p class="community-card-desc">{{ item.description }}</p>
+          <div class="community-card-tags">
+            {% for tag in item.tags %}
+            <span class="community-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <div class="community-card-footer">
+            <div class="community-stats">
+              <span>👍 {{ item.likes }}</span>
+              <span>👁 {{ item.impressions }}</span>
+            </div>
+            <a href="{{ item.url }}" target="_blank" rel="noopener" class="community-link">View on LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
 {% if site.data.features %}
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">

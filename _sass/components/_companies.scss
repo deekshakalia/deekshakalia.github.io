@@ -1,0 +1,38 @@
+.companies-strip {
+  background-color: $white-offset;
+}
+
+.companies-title {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $steel;
+  margin-bottom: 1.5rem;
+}
+
+.companies-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.company-badge {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  border: 2px solid $primary;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $primary;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  &:hover {
+    background-color: $primary;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
