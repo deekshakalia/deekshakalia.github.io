@@ -1,2 +1,29 @@
 .page-home {
 }
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: $steel;
+  background: $white-offset;
+  border: 1px solid darken($white-offset, 6%);
+  padding: 0.35rem 0.85rem;
+  border-radius: 2rem;
+  line-height: 1.4;
+
+  &.hero-badge-accent {
+    color: $primary;
+    background: lighten($primary, 52%);
+    border-color: lighten($primary, 38%);
+    font-weight: 600;
+  }
+}
