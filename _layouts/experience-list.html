@@ -13,9 +13,9 @@ bodyClass: "page-experience"
   </div>
 </div>
 
-<div class="container pt-4 pb-10">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-9">
+<div class="container pt-6 pb-10">
+  <div class="row">
+    <div class="col-12">
       <div class="experience-timeline">
         {% assign experiences = site.team | sort: "weight" %}
         {% for exp in experiences %}
@@ -25,17 +25,30 @@ bodyClass: "page-experience"
           </div>
           <div class="experience-card">
             <div class="experience-header">
-              <div class="experience-company-wrap">
+              <div class="experience-left">
                 <div class="experience-initials">{{ exp.title | slice: 0 }}</div>
-                <div>
+                <div class="experience-title-block">
                   <h2 class="experience-company">{{ exp.title }}</h2>
                   <p class="experience-role">{{ exp.jobtitle }}</p>
+                  {% if exp.location %}
+                  <p class="experience-location">📍 {{ exp.location }}</p>
+                  {% endif %}
                 </div>
               </div>
+              {% if exp.date_range %}
+              <div class="experience-date">{{ exp.date_range }}</div>
+              {% endif %}
             </div>
             <div class="experience-body">
               {{ exp.content | markdownify }}
             </div>
+            {% if exp.skills %}
+            <div class="experience-skills">
+              {% for skill in exp.skills %}
+              <span class="experience-skill-tag">{{ skill }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
         </div>
         {% endfor %}

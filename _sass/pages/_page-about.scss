@@ -1,0 +1,299 @@
+.page-about {
+  .page-about-hero {
+    background-color: $white-offset;
+    border-bottom: 1px solid darken($white-offset, 5%);
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $black;
+  font-family: $font-family-heading;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid $primary;
+  display: inline-block;
+}
+
+// Education timeline
+.about-edu-timeline {
+  position: relative;
+  padding-left: 2.5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, $primary, lighten($primary, 35%));
+  }
+}
+
+.about-edu-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.about-edu-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+}
+
+.about-edu-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 3px solid $primary;
+  box-shadow: 0 0 0 2px lighten($primary, 30%);
+}
+
+.about-edu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.about-edu-content {
+  flex: 1;
+}
+
+.about-edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $black;
+    margin: 0 0 0.2rem;
+    font-family: $font-family-heading;
+  }
+}
+
+.about-edu-date {
+  font-size: 0.82rem;
+  color: $steel;
+  font-weight: 500;
+  background: $white-offset;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.mt-2 { margin-top: 0.5rem; }
+
+// Education & Project cards
+.about-card {
+  background: $white;
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.3rem 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border-color: lighten($primary, 30%);
+  }
+
+  &.about-card-highlight {
+    border-left: 4px solid $primary;
+  }
+
+  .about-card-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $black;
+    margin: 0 0 0.2rem;
+    font-family: $font-family-heading;
+  }
+
+  .about-card-sub {
+    font-size: 0.85rem;
+    color: $primary;
+    font-weight: 600;
+    margin: 0 0 0.15rem;
+  }
+
+  .about-card-org {
+    font-size: 0.85rem;
+    color: $black;
+    margin: 0 0 0.15rem;
+  }
+
+  .about-card-date {
+    font-size: 0.8rem;
+    color: $steel;
+    margin: 0 0 0.6rem;
+  }
+
+  .about-card-desc {
+    font-size: 0.88rem;
+    color: $steel;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.about-tag {
+  font-size: 0.72rem;
+  background: $white-offset;
+  color: $primary;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  border: 1px solid lighten($primary, 35%);
+}
+
+// Skill cards
+.about-skill-card {
+  background: $white;
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.2rem 1.3rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border-color: lighten($primary, 30%);
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $primary;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.about-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+
+  span {
+    font-size: 0.75rem;
+    background: $white-offset;
+    color: $black;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid darken($white-offset, 6%);
+  }
+}
+
+// Certification cards
+.about-cert-card {
+  background: $white;
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.2rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border-color: lighten($primary, 30%);
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $black;
+    margin: 0 0 0.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: $steel;
+    margin: 0;
+  }
+}
+
+.about-cert-badge {
+  min-width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: $primary;
+  color: $white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+// Awards
+.about-award-card {
+  background: $white;
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.2rem 1.3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border-color: lighten($primary, 30%);
+  }
+
+  .about-award-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $black;
+    margin: 0 0 0.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: $steel;
+    margin: 0;
+  }
+}

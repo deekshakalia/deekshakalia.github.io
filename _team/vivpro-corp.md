@@ -2,11 +2,11 @@
 title: "Vivpro Corporation"
 date: 2025-07-01
 jobtitle: "Safety and Regulatory Analyst Intern"
-linkedinurl: "https://www.linkedin.com/in/dr-deeksha-kalia/"
+date_range: "July 2025 – December 2025"
+location: "New Jersey, USA"
+skills: ["ICH E3", "CSR", "NISR", "ICD", "PLPS", "PADER", "Prompt Engineering", "AI-Assisted Writing", "FDA/EMA/ICH Compliance", "Veeva RIM"]
 weight: 2
 ---
-
-**July 2025 – December 2025 · New Jersey**
 
 - Served as Subject Matter Expert (SME) for regulatory and safety documentation, validating AI-generated content across 5+ regulatory documents per ICH, FDA, and EMA standards
 - Applied prompt engineering and LLM-based AI-assisted regulatory writing to draft Clinical Study Reports (CSR; ICH E3), Non-Interventional Study Reports (NISR), Informed Consent Documents (ICD), and Plain Language Protocol Synopsis (PLPS) — reducing drafting timelines by approximately 95%
