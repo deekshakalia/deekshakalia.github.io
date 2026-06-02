@@ -1,5 +1,5 @@
 # Ruby / Bundler
-vendor/
+/vendor/
 .bundle/
 
 # NPM
