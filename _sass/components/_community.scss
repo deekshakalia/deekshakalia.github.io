@@ -17,18 +17,9 @@
 }
 
 .community-card {
-  background: $white;
-  border: 1px solid darken($white-offset, 5%);
-  border-radius: 8px;
-  padding: 1.5rem;
-  height: 100%;
+  // base card styles come from _page-home.scss shared rule
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-  &:hover {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transform: translateY(-2px);
-  }
 }
 
 .community-card-header {
