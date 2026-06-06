@@ -1,0 +1,57 @@
+---
+layout: default
+bodyClass: "page-blog"
+---
+
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-6 pb-10">
+  <div class="row">
+    <div class="col-12">
+
+      {% if site.posts.size > 0 %}
+      <div class="post-list">
+        {% for post in site.posts %}
+        <article class="post-card">
+          {% if post.image %}
+          <a href="{{ post.url | relative_url }}" class="post-card-image-link">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-image">
+          </a>
+          {% endif %}
+          <div class="post-card-body">
+          <div class="post-card-meta">
+            {% if post.tags.size > 0 %}
+            <div class="post-tags">
+              {% for tag in post.tags %}
+              <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+          <h2 class="post-card-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+          {% if post.description %}
+          <p class="post-card-excerpt">{{ post.description }}</p>
+          {% endif %}
+          <a href="{{ post.url | relative_url }}" class="post-card-link stretched-link">Read more &rarr;</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="text-muted">No posts yet — check back soon.</p>
+      {% endif %}
+
+    </div>
+  </div>
+</div>

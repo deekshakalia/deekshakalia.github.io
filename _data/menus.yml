@@ -8,6 +8,9 @@ main:
   - name: "About"
     url: "/about/"
     weight: 4
+  - name: "Blog"
+    url: "/blog/"
+    weight: 5
 footer:
   - name: "Home"
     url: "/"
