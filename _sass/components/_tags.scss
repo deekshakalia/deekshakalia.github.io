@@ -1,0 +1,10 @@
+// Shared pill tag — used on Homepage blog cards, About page (Experience/Skills/Education), and Blog list cards
+.tag-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: $white-offset;
+  color: $primary;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2rem;
+}

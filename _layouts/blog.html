@@ -84,22 +84,28 @@ bodyClass: "page-blog"
     var buttons = document.querySelectorAll('.tag-filter-btn');
     var cards = document.querySelectorAll('#postList .post-card');
 
+    function filterByTag(selected) {
+      buttons.forEach(function (b) { b.classList.remove('active'); });
+      var match = document.querySelector('.tag-filter-btn[data-tag="' + selected + '"]');
+      if (match) match.classList.add('active');
+
+      cards.forEach(function (card) {
+        var tags = card.dataset.tags.split(',').map(function (t) { return t.trim(); });
+        card.style.display = (selected === 'all' || tags.indexOf(selected) !== -1) ? '' : 'none';
+      });
+    }
+
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var selected = this.dataset.tag;
-
-        buttons.forEach(function (b) { b.classList.remove('active'); });
-        this.classList.add('active');
-
-        cards.forEach(function (card) {
-          var tags = card.dataset.tags.split(',').map(function (t) { return t.trim(); });
-          if (selected === 'all' || tags.indexOf(selected) !== -1) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
+        filterByTag(this.dataset.tag);
       });
     });
+
+    // Auto-select tag from URL ?tag=
+    var params = new URLSearchParams(window.location.search);
+    var tagParam = params.get('tag');
+    if (tagParam) {
+      filterByTag(tagParam);
+    }
   })();
 </script>

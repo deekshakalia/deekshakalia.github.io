@@ -312,13 +312,20 @@
   flex-wrap: wrap;
 }
 
-.post-tag {
-  background: lighten($secondary, 25%);
-  color: $primary-dark;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.15rem 0.6rem;
-  border-radius: 999px;
+// .post-tag uses shared .tag-pill from components/_tags.scss
+.post-tag { @extend .tag-pill; }
+
+a.post-tag-link {
+  text-decoration: none;
+  border: 1px solid $primary;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+    border-color: $primary;
+    text-decoration: none;
+  }
 }
 
 #back-to-top {

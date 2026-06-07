@@ -182,15 +182,8 @@
   gap: 0.35rem;
 }
 
-.about-tag {
-  font-size: 0.72rem;
-  background: $white-offset;
-  color: $primary;
-  padding: 0.2rem 0.55rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  border: 1px solid lighten($primary, 35%);
-}
+// .about-tag uses shared .tag-pill from components/_tags.scss
+.about-tag { @extend .tag-pill; }
 
 // Skill cards
 .about-skill-card {
@@ -220,14 +213,8 @@
   flex-wrap: wrap;
   gap: 0.35rem;
 
-  span {
-    font-size: 0.75rem;
-    background: $white-offset;
-    color: $black;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    border: 1px solid darken($white-offset, 6%);
-  }
+  // span tags use shared .tag-pill styles — applied via @extend in HTML or JS
+  span { @extend .tag-pill; }
 }
 
 // Certification cards
@@ -471,21 +458,8 @@
   border-top: 1px solid $white-offset;
 }
 
-.experience-skill-tag {
-  font-size: 0.75rem;
-  background-color: $white-offset;
-  color: $primary;
-  padding: 0.25rem 0.65rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  border: 1px solid lighten($primary, 35%);
-  transition: background-color 0.15s ease, color 0.15s ease;
-
-  &:hover {
-    background-color: $primary;
-    color: $white;
-  }
-}
+// .experience-skill-tag uses shared .tag-pill from components/_tags.scss
+.experience-skill-tag { @extend .tag-pill; }
 
 .experience-item-hidden {
   display: none;

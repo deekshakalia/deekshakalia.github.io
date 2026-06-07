@@ -45,7 +45,7 @@ bodyClass: "page-post"
         {% if page.tags %}
         <div class="post-tags mt-3">
           {% for tag in page.tags %}
-          <span class="post-tag">{{ tag }}</span>
+          <a href="{{ '/blog/?tag=' | append: tag | uri_escape | relative_url }}" class="post-tag post-tag-link">{{ tag }}</a>
           {% endfor %}
         </div>
         {% endif %}

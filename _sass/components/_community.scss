@@ -87,14 +87,8 @@ a.community-card-link {
   margin-bottom: 1rem;
 }
 
-.community-tag {
-  font-size: 0.75rem;
-  background-color: $white-offset;
-  color: $primary;
-  padding: 0.2rem 0.6rem;
-  border-radius: 1rem;
-  font-weight: 600;
-}
+// .community-tag uses shared .tag-pill from components/_tags.scss
+.community-tag { @extend .tag-pill; }
 
 .community-card-footer {
   display: flex;
