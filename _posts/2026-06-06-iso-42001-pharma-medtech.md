@@ -3,7 +3,7 @@ layout: post
 title: "ISO/IEC 42001: What It Means for Pharma and MedTech Companies"
 date: 2026-06-06
 description: "ISO/IEC 42001 is the world's first international standard for AI Management Systems. Here's why it matters for pharma and medtech, and what regulatory professionals need to know."
-image: /images/blog/ISO42001_hero_badge_v5.svg
+image: /images/blog/ISO42001_hero_badge_v5.jpg
 tags:
   - Regulatory Affairs
   - AI Governance
