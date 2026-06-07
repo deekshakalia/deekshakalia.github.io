@@ -21,7 +21,7 @@ bodyClass: "page-about"
     <div class="experience-timeline">
       {% assign experiences = site.team | sort: "weight" %}
       {% for exp in experiences %}
-      <div class="experience-item{% if forloop.index > 2 %} experience-item-hidden{% endif %}">
+      <div class="experience-item{% if forloop.index > 3 %} experience-item-hidden{% endif %}">
         <div class="experience-marker">
           <div class="experience-dot"></div>
         </div>
