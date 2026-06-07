@@ -150,8 +150,22 @@
     color: $steel;
     font-size: 0.9rem;
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
+
+    .post-date,
+    .post-reading-time {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+
+      svg {
+        flex-shrink: 0;
+        stroke: $primary;
+        opacity: 0.85;
+      }
+    }
 
     .post-author::before {
       content: "·";
