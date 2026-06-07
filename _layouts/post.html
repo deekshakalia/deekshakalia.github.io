@@ -26,13 +26,6 @@ bodyClass: "page-post"
       {% endif %}
 
       <div class="post-header mb-5">
-        {% if page.tags %}
-        <div class="post-tags mb-2">
-          {% for tag in page.tags %}
-          <span class="post-tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
         <h1 class="post-title">{{ page.title }}</h1>
         {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
@@ -49,6 +42,13 @@ bodyClass: "page-post"
             {% if minutes < 1 %}1{% else %}{{ minutes }}{% endif %} min read
           </span>
         </div>
+        {% if page.tags %}
+        <div class="post-tags mt-3">
+          {% for tag in page.tags %}
+          <span class="post-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
 
       <div class="post-content content">

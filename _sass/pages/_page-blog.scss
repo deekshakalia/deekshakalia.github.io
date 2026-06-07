@@ -16,12 +16,19 @@
     position: relative;
     border: 1px solid darken($white-offset, 4%);
     background: $white;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     transition: box-shadow 0.2s ease, border-color 0.2s ease;
     overflow: hidden;
     display: flex;
-    align-items: stretch;
-    height: 200px;
+    flex-direction: column;
+    height: auto;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      align-items: stretch;
+      height: 210px;
+      border-radius: 0 8px 8px 0;
+    }
 
     &:hover {
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
@@ -32,11 +39,14 @@
   .post-card-image-link {
     display: block;
     flex-shrink: 0;
-    width: 200px;
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    width: 100%;
+    height: 180px;
+    padding: 0;
 
     @include media-breakpoint-up(md) {
       width: 240px;
+      height: auto;
+      padding: 0.5rem 0 0.5rem 0.5rem;
     }
   }
 
@@ -46,11 +56,15 @@
     object-fit: cover;
     object-position: center center;
     display: block;
-    border-radius: 6px;
+    border-radius: 0;
+
+    @include media-breakpoint-up(md) {
+      border-radius: 6px;
+    }
   }
 
   .post-card-body {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.5rem 1.25rem;
     flex: 1;
     min-width: 0;
   }
@@ -63,10 +77,15 @@
     margin-bottom: 0.5rem;
   }
 
+  .post-card-tags {
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
   .post-card-title {
     font-family: $font-family-heading;
     font-size: 1.4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 
     a {
       color: $black;
@@ -79,6 +98,29 @@
     }
   }
 
+  .post-card-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+
+    .post-date,
+    .post-reading-time {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.85rem;
+      color: $steel;
+
+      svg {
+        flex-shrink: 0;
+        stroke: $primary;
+        opacity: 0.85;
+      }
+    }
+  }
+
   .post-card-excerpt {
     color: $steel;
     margin-bottom: 0.75rem;
@@ -86,6 +128,8 @@
   }
 
   .post-card-link {
+    display: inline-block;
+    margin-top: 0.5rem;
     color: $primary;
     font-weight: 600;
     font-size: 0.9rem;
