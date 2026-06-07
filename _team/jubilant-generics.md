@@ -2,7 +2,7 @@
 title: "Jubilant Generics (P) Ltd"
 date: 2022-03-01
 jobtitle: "Executive Pharmacovigilance"
-date_range: "March 2022 – August 2023"
+date_range: "Mar 2022 – Aug 2023"
 location: "Noida, India"
 skills: ["Argus Safety", "MedDRA", "WHODRUG", "SAE Processing", "PSURs", "PADERs", "eCTD Module 2", "EMA/MHRA Cases", "PubMed Literature Review"]
 weight: 4

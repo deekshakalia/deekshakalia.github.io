@@ -11,6 +11,6 @@ Drafting and reviewing regulatory submission documents compliant with ICH, FDA, 
 - Clinical Study Reports (CSR) compliant with ICH E3
 - Non-Interventional Study Reports (NISR) and Informed Consent Documents (ICD)
 - Plain Language Protocol Synopsis (PLPS) and Clinical Assessment Reports
-- eCTD-compliant NDA Table of Contents (Modules 1–5) per ICH M4, E3, and 21 CFR Part 314
+- eCTD-compliant NDA Table of Contents (Modules 1-5) per ICH M4, E3, and 21 CFR Part 314
 - FDA 21 CFR compliant Pre-Submission (Pre-Sub) documentation for medical devices
 - Breakthrough Device Designation (BDD) request documentation

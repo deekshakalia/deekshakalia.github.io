@@ -12,5 +12,5 @@ Regulatory expertise spanning medical device submissions and clinical trial docu
 - Preclinical study design and animal study protocols per ISO 10993
 - Breakthrough Device Designation (BDD) request authoring
 - Informed Consent Form (ICF) drafting per 21 CFR Parts 50 & 56
-- Benefit–risk assessment for NDAs/BLAs and medical devices (REMS evaluation)
+- Benefit-risk assessment for NDAs/BLAs and medical devices (REMS evaluation)
 - Clinical trial documentation and regulatory submissions support

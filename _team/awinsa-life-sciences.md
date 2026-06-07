@@ -2,7 +2,7 @@
 title: "Awinsa Life Sciences (P) Ltd"
 date: 2023-08-01
 jobtitle: "Senior Pharmacovigilance Associate"
-date_range: "August 2023 – August 2024"
+date_range: "Aug 2023 – Aug 2024"
 location: "Noida, India"
 skills: ["ICSR Processing", "MedDRA Coding", "PADER", "Veeva RIM", "Signal Analysis", "Literature Surveillance", "MedWatch", "Post-Marketing Surveillance", "Team Leadership"]
 weight: 3

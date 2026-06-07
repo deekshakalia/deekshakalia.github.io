@@ -2,7 +2,7 @@
 title: "AIG Business Solution (P) Ltd"
 date: 2020-12-01
 jobtitle: "Data and Research Analyst"
-date_range: "December 2020 – October 2021"
+date_range: "Dec 2020 – Oct 2021"
 location: "Gurugram, India"
 skills: ["HIPAA Compliance", "Data Analysis", "Excel", "Data Visualization", "Healthcare Research", "Stakeholder Presentations"]
 weight: 5

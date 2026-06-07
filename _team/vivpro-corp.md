@@ -2,7 +2,7 @@
 title: "Vivpro Corporation"
 date: 2025-07-01
 jobtitle: "Safety and Regulatory Analyst Intern"
-date_range: "July 2025 – December 2025"
+date_range: "Jul 2025 – Dec 2025"
 location: "New Jersey, USA"
 skills: ["ICH E3", "CSR", "NISR", "ICD", "PLPS", "PADER", "Prompt Engineering", "AI-Assisted Writing", "FDA/EMA/ICH Compliance", "Veeva RIM"]
 weight: 2

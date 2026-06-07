@@ -47,8 +47,7 @@ bodyClass: "page-home"
     <h2 class="community-title">Recent Blog Posts</h2>
     <p class="community-subtitle">Thoughts on regulatory affairs, pharmacovigilance, and AI in the life sciences.</p>
     <div class="row">
-      {% assign recent_posts = site.posts | limit: 3 %}
-      {% for post in recent_posts %}
+      {% for post in site.posts limit: 3 %}
       <div class="col-12 col-md-4 mb-3">
         <a href="{{ post.url | relative_url }}" class="community-card community-card-link">
           <div class="community-card-header">
@@ -56,7 +55,7 @@ bodyClass: "page-home"
             <div class="community-card-meta">
               <span class="community-card-date">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                {{ post.date | date: "%B %-d, %Y" }}
+                {{ post.date | date: "%b %-d, %Y" }}
               </span>
               <span class="community-card-read-time">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>

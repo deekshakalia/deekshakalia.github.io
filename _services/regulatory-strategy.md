@@ -13,4 +13,4 @@ Strategic regulatory guidance across FDA, EMA, and ICH frameworks — from pre-s
 - Post-marketing surveillance and ANDA compliance oversight for 100+ drugs
 - Subject Matter Expert (SME) for validation and QC of regulatory documents per ICH, FDA, EMA standards
 - FDA prescription drug advertising review per 21 CFR 202 and OPDP standards
-- Benefit–risk assessment and REMS evaluation aligned with FDA NDA/BLA frameworks
+- Benefit-risk assessment and REMS evaluation aligned with FDA NDA/BLA frameworks

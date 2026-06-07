@@ -10,15 +10,15 @@ tags:
   - Conference
 ---
 
-The **World Patient Safety Congress 2024** (formerly World Drug Safety Congress Americas), held October 29–30, 2024 in Boston, MA, brought together over 1,700 industry leaders and stakeholders, making it the largest commercial gathering of pharmacovigilance professionals in the world. Being part of it was an experience I won't forget.
+The **World Patient Safety Congress 2024** (formerly World Drug Safety Congress Americas), held October 29-30, 2024 in Boston, MA, brought together over 1,700 industry leaders and stakeholders, making it the largest commercial gathering of pharmacovigilance professionals in the world. Being part of it was an experience I won't forget.
 
-## Day One – Industry Connections and Conversations
+## Day One: Industry Connections and Conversations
 
 The first day was all about conversations. I had the privilege of representing AWINSA Life Sciences where we welcomed professionals for in-depth discussions on pharmacovigilance, clinical safety, medical monitoring, medical writing, and medical affairs. The energy on the floor was electric; everyone was eager to share ideas, explore partnerships, and talk about where the field is heading.
 
 If you stopped by to say hello, thank you. And if you didn't get a chance, the second day was even better.
 
-## Day Two – Learning from the Best
+## Day Two: Learning from the Best
 
 The second day shifted to immersion. I attended sessions led by some of the sharpest minds in drug safety and regulatory affairs, and the breadth of topics was remarkable.
 
