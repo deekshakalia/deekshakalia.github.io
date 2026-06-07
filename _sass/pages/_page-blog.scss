@@ -6,6 +6,35 @@
     padding-bottom: 2.5rem;
   }
 
+  .tag-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag-filter-btn {
+    background: $white;
+    color: $steel;
+    border: 1px solid darken($white-offset, 8%);
+    border-radius: 999px;
+    padding: 0.3rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+
+    &.active {
+      background: $primary;
+      color: $white;
+      border-color: $primary;
+    }
+  }
+
   .post-list {
     display: flex;
     flex-direction: column;

@@ -6,10 +6,9 @@ description: "ISO/IEC 42001 is the world's first international standard for AI M
 image: /images/blog/ISO42001_hero_badge_v5.jpg
 tags:
   - Regulatory Affairs
-  - AI Governance
-  - ISO 42001
+  - AI
   - Pharmacovigilance
-  - MedTech
+  - Medical Device
 ---
 
 ## Abstract

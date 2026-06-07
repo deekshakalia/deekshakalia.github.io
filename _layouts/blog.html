@@ -18,9 +18,23 @@ bodyClass: "page-blog"
     <div class="col-12">
 
       {% if site.posts.size > 0 %}
-      <div class="post-list">
+
+      <!-- Tag filter -->
+      <div class="tag-filter mb-5">
+        <button class="tag-filter-btn active" data-tag="all">All</button>
+        {% assign all_tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+        {% for tag in all_tags %}
+        {% assign tag_trimmed = tag | strip %}
+        {% if tag_trimmed != "" %}
+        <button class="tag-filter-btn" data-tag="{{ tag_trimmed }}">{{ tag_trimmed }}</button>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="post-list" id="postList">
         {% for post in site.posts %}
-        <article class="post-card">
+        {% assign tag_list = post.tags | join: "," %}
+        <article class="post-card" data-tags="{{ tag_list }}">
           {% if post.image %}
           <a href="{{ post.url | relative_url }}" class="post-card-image-link">
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-image">
@@ -64,3 +78,28 @@ bodyClass: "page-blog"
     </div>
   </div>
 </div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.tag-filter-btn');
+    var cards = document.querySelectorAll('#postList .post-card');
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var selected = this.dataset.tag;
+
+        buttons.forEach(function (b) { b.classList.remove('active'); });
+        this.classList.add('active');
+
+        cards.forEach(function (card) {
+          var tags = card.dataset.tags.split(',').map(function (t) { return t.trim(); });
+          if (selected === 'all' || tags.indexOf(selected) !== -1) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  })();
+</script>

@@ -40,11 +40,27 @@ a.community-card-link {
   margin-bottom: 0.75rem;
 }
 
-.community-card-date {
+.community-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.community-card-date,
+.community-card-read-time {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   font-size: 0.8rem;
   color: $steel;
   white-space: nowrap;
-  margin-left: 0;
+
+  svg {
+    flex-shrink: 0;
+    stroke: $primary;
+    opacity: 0.85;
+  }
 }
 
 .community-card-title {

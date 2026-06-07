@@ -5,10 +5,8 @@ date: 2025-06-19
 description: Reflections on volunteering at the DIA Global Annual Meeting (June 15-19, 2025, Washington D.C.) on purpose, connection, and what it means to start somewhere.
 image: /images/blog/dia2025.jpg
 tags:
-  - DIA 2025
   - Regulatory Affairs
   - Volunteering
-  - Life Sciences
   - Conference
 ---
 
