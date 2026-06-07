@@ -51,9 +51,37 @@ bodyClass: "page-post"
         {% endif %}
       </div>
 
+      <details class="post-toc" id="postToc">
+        <summary class="post-toc-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="18" y2="18"/></svg>
+          Table of Contents
+        </summary>
+        <nav class="post-toc-nav" id="postTocNav"></nav>
+      </details>
+
       <div class="post-content content">
         {{ content }}
       </div>
+
+      <script>
+        (function () {
+          var headings = document.querySelectorAll('.post-content h2, .post-content h3');
+          if (headings.length < 2) { document.getElementById('postToc').style.display = 'none'; return; }
+          var nav = document.getElementById('postTocNav');
+          var ul = document.createElement('ul');
+          headings.forEach(function (h) {
+            if (!h.id) h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+            var li = document.createElement('li');
+            li.className = h.tagName === 'H3' ? 'toc-h3' : 'toc-h2';
+            var a = document.createElement('a');
+            a.href = '#' + h.id;
+            a.textContent = h.textContent;
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+          nav.appendChild(ul);
+        })();
+      </script>
 
       <div class="post-footer mt-6">
         <a href="/blog/" class="btn-back">&larr; Back to Blog</a>
