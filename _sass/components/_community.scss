@@ -22,9 +22,20 @@
   flex-direction: column;
 }
 
+a.community-card-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 .community-card-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-start;
   margin-bottom: 0.75rem;
 }
@@ -33,7 +44,7 @@
   font-size: 0.8rem;
   color: $steel;
   white-space: nowrap;
-  margin-left: 0.5rem;
+  margin-left: 0;
 }
 
 .community-card-title {
