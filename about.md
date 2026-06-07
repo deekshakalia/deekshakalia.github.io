@@ -7,4 +7,4 @@ bodyClass: page-about
 
 # About
 
-FRA-certified Regulatory Affairs professional with clinical foundation in dentistry -- passionate about patient safety, global regulatory science, and AI-driven approaches to drug development & compliance.
+FRA-certified Regulatory Affairs professional with a clinical background in dentistry and a track record in pharmacovigilance across global pharmaceutical organisations -- passionate about patient safety, regulatory science, and AI-driven drug development & compliance.

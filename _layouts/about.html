@@ -15,6 +15,70 @@ bodyClass: "page-about"
 
 <div class="container about-body pt-6 pb-10">
 
+  <!-- Experience -->
+  <div class="about-section">
+    <h2 class="about-section-title">Experience</h2>
+    <div class="experience-timeline">
+      {% assign experiences = site.team | sort: "weight" %}
+      {% for exp in experiences %}
+      <div class="experience-item{% if forloop.index > 2 %} experience-item-hidden{% endif %}">
+        <div class="experience-marker">
+          <div class="experience-dot"></div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-left">
+              <div class="experience-initials">{{ exp.title | slice: 0 }}</div>
+              <div class="experience-title-block">
+                <h2 class="experience-company">{{ exp.title }}</h2>
+                <p class="experience-role">{{ exp.jobtitle }}</p>
+                {% if exp.location %}
+                <p class="experience-location">📍 {{ exp.location }}</p>
+                {% endif %}
+              </div>
+            </div>
+            {% if exp.date_range %}
+            <div class="experience-date">{{ exp.date_range }}</div>
+            {% endif %}
+          </div>
+          <div class="experience-body">
+            {{ exp.content | markdownify }}
+          </div>
+          {% if exp.skills %}
+          <div class="experience-skills">
+            {% for skill in exp.skills %}
+            <span class="experience-skill-tag">{{ skill }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="experience-expand-row" id="expToggle" onclick="toggleExperience()" role="button" tabindex="0">
+      <span class="experience-expand-line"></span>
+      <span class="experience-expand-label">
+        <span id="expToggleText">3 more roles</span>
+        <svg id="expChevron" class="experience-expand-chevron" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="experience-expand-line"></span>
+    </div>
+  </div>
+
+  <script>
+    function toggleExperience() {
+      var hidden = document.querySelectorAll('.experience-item-hidden');
+      var btn = document.getElementById('expToggle');
+      var expanded = btn.getAttribute('data-expanded') === 'true';
+      hidden.forEach(function(el) { el.style.display = expanded ? 'none' : 'block'; });
+      document.getElementById('expToggleText').textContent = expanded ? '3 more roles' : 'Show less';
+      document.getElementById('expChevron').style.transform = expanded ? 'rotate(0deg)' : 'rotate(180deg)';
+      btn.setAttribute('data-expanded', expanded ? 'false' : 'true');
+    }
+  </script>
+
   <!-- Education -->
   <div class="about-section">
     <h2 class="about-section-title">Education</h2>
