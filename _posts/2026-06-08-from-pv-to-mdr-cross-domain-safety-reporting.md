@@ -21,6 +21,9 @@ tags:
 
 Pharmacovigilance and Medical Device Reporting are often treated as two separate disciplines. One deals with drugs. The other deals with devices. The acronyms are different. The regulators speak differently. Even the forms look different. But the underlying mission is identical. Detect harm. Assess it systematically. Report it accurately. Get it to the right authority on time. Prevent it from happening again.
 
+By the end of this article, you will be able to map your existing PV knowledge directly onto the medical device reporting framework, understand where the two systems genuinely diverge, and know exactly which regulations and concepts to focus on if you are building cross-domain expertise.
+
+
 <div class="pv-section-label">Section 1 — Pharmacovigilance</div>
 
 ## What is pharmacovigilance?
@@ -37,25 +40,27 @@ Pharmacovigilance and Medical Device Reporting are often treated as two separate
     <div class="pv-reg-card-title">21 CFR 312.32</div>
     <div class="pv-reg-card-subtitle">US FDA — IND safety reporting</div>
     <p>Governs IND safety reporting during clinical trials. Covers expedited reporting of SUSARs.</p>
-    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-B/section-312.32" target="_blank" rel="noopener">ecfr.gov/current/title-21/chapter...</a>
+    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-B/section-312.32" target="_blank" rel="noopener">View on eCFR →</a>
   </div>
   <div class="pv-reg-card">
     <div class="pv-reg-card-title">21 CFR 314.80</div>
     <div class="pv-reg-card-subtitle">US FDA — post-marketing reporting</div>
     <p>Governs post-marketing adverse drug experience reporting. Defines 15-day expedited and periodic reporting obligations.</p>
-    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-314/subpart-G/section-314.80" target="_blank" rel="noopener">ecfr.gov/current/title-21/chapter...</a>
+    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-314/subpart-G/section-314.80" target="_blank" rel="noopener">View on eCFR →</a>
   </div>
   <div class="pv-reg-card">
     <div class="pv-reg-card-title">21 CFR 314.81</div>
     <div class="pv-reg-card-subtitle">US FDA — periodic reports</div>
     <p>Covers PADERs. Quarterly reports for first 3 years post-approval, then annual reporting.</p>
-    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-314/subpart-G/section-314.81" target="_blank" rel="noopener">ecfr.gov/current/title-21/chapter...</a>
+    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-314/subpart-G/section-314.81" target="_blank" rel="noopener">View on eCFR →</a>
   </div>
 </div>
 
 <div class="pv-definition-callout">
   <div class="pv-callout-label">EU Framework: GVP Module VI</div>
-  <p>Guideline on good pharmacovigilance practices — Module VI governs collection, management and submission of reports of suspected adverse reactions. Rev 2, in effect 22 November 2017. EMA/873138/2011.</p>
+  <p>Guideline on good pharmacovigilance practices — Module VI governs collection, management and submission of reports of suspected adverse reactions. Rev 2, in effect 22 November 2017. EMA/873138/2011.
+  <a href="https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/guideline-good-pharmacovigilance-practices-gvp-module-vi-collection-management-submission-reports-suspected-adverse-reactions-medicinal-products-rev-2_en.pdf" target="_blank">Refer to EMA GVP Module VI →</a>
+  </p>
 </div>
 
 ## The 4 elements of a valid ICSR
@@ -68,28 +73,28 @@ Not every report that lands in your safety database is a valid ICSR. Under ICH E
     <div class="pv-element-title">Patient</div>
     <div class="pv-element-subtitle">An identifiable patient</div>
     <p>At least one piece of information to identify a unique patient. Full name not required.</p>
-    <div class="pv-element-tags">[Initials] [Age / DOB] [Sex] [Patient ID]</div>
+    <div class="pv-element-tags"><span class="tag-pill">Initials</span> <span class="tag-pill">Age / DOB</span> <span class="tag-pill">Sex</span> <span class="tag-pill">Patient ID</span></div>
   </div>
   <div class="pv-element-card">
     <div class="pv-element-num">Element 02</div>
     <div class="pv-element-title">Reporter</div>
     <div class="pv-element-subtitle">An identifiable reporter</div>
     <p>At least one identifiable person who reported the reaction. HCP, patient, consumer, or lawyer.</p>
-    <div class="pv-element-tags">[Physician] [Pharmacist] [Patient] [Lawyer]</div>
+    <div class="pv-element-tags"><span class="tag-pill">Physician</span> <span class="tag-pill">Pharmacist</span> <span class="tag-pill">Patient</span> <span class="tag-pill">Lawyer</span></div>
   </div>
   <div class="pv-element-card">
     <div class="pv-element-num">Element 03</div>
     <div class="pv-element-title">Suspect drug</div>
     <div class="pv-element-subtitle">At least one suspect product</div>
     <p>At least one medicinal product suspected to have caused or contributed to the adverse reaction.</p>
-    <div class="pv-element-tags">[Brand / generic name] [Dose / route] [Product list check]</div>
+    <div class="pv-element-tags"><span class="tag-pill">Brand / generic name</span> <span class="tag-pill">Dose / route</span> <span class="tag-pill">Product list check</span></div>
   </div>
   <div class="pv-element-card">
     <div class="pv-element-num">Element 04</div>
     <div class="pv-element-title">Adverse event</div>
     <div class="pv-element-subtitle">At least one adverse reaction</div>
     <p>At least one adverse reaction described. Coded using MedDRA PT under the appropriate SOC.</p>
-    <div class="pv-element-tags">[MedDRA PT] [MedDRA SOC] [Verbatim term]</div>
+    <div class="pv-element-tags"><span class="tag-pill">MedDRA PT</span> <span class="tag-pill">MedDRA SOC</span> <span class="tag-pill">Verbatim term</span></div>
   </div>
 </div>
 
@@ -130,7 +135,7 @@ An adverse drug reaction is classified as serious if it meets any one of the fol
 
 <div class="pv-rule-callout">
   <div class="pv-callout-label">15-Day Expedited Report Rule — 21 CFR 314.80(c)(1)(i)</div>
-  <p>A case must be BOTH serious AND unexpected (not listed in the RSI) to trigger a 15-day expedited report. A serious but expected event goes into periodic reporting. Expectedness is assessed against the RSI, typically the CCDS or local Product Information (PI).</p>
+  <p>A case must be BOTH serious AND unexpected (not listed in the RSI) to trigger a 15-day expedited report. A serious but expected event goes into periodic reporting. A non-serious event goes into periodic reporting regardless of expectedness. Expectedness is assessed against the RSI, typically the CCDS or local Product Information (PI).</p>
 </div>
 
 ## The Argus ICSR processing workflow
@@ -154,9 +159,11 @@ An adverse drug reaction is classified as serious if it meets any one of the fol
   <p class="pv-workflow-note">QC fail loop: cases that fail QC return to Data Entry for correction before proceeding.</p>
 </div>
 
-<div class="pv-section-label">Section 2 — Medical Device Reporting</div>
+<div class="pv-section-label">Section 2: Medical Device Reporting</div>
 
 ## What is medical device reporting?
+
+Medical Device Reporting (MDR) is the mandatory system by which manufacturers, importers, and device user facilities report device-related deaths, serious injuries, and malfunctions to regulatory authorities. Just like PV in pharma, the goal is to detect safety signals, protect patients, and trigger corrective action where needed.
 
 <div class="pv-definition-callout">
   <div class="pv-callout-label">FDA Definition</div>
@@ -170,19 +177,19 @@ An adverse drug reaction is classified as serious if it meets any one of the fol
     <div class="pv-reg-card-title">21 CFR Part 803</div>
     <div class="pv-reg-card-subtitle">US FDA — MDR regulation</div>
     <p>Primary US regulation. Covers manufacturers (30-day and 5-work-day reports), importers, and device user facilities (10-day).</p>
-    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-803" target="_blank" rel="noopener">ecfr.gov/current/title-21/chapter...</a>
+    <a class="pv-reg-card-link" href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-803" target="_blank" rel="noopener">View on eCFR →</a>
   </div>
   <div class="pv-reg-card">
     <div class="pv-reg-card-title">EU MDR 2017/745</div>
     <div class="pv-reg-card-subtitle">EU — medical devices regulation</div>
     <p>Article 87 governs serious incident reporting timelines. Submission via EUDAMED to national CAs and Notified Body.</p>
-    <a class="pv-reg-card-link" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0745" target="_blank" rel="noopener">eur-lex.europa.eu/legal-content/EN/TX...</a>
+    <a class="pv-reg-card-link" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0745" target="_blank" rel="noopener">View on EUR-Lex →</a>
   </div>
   <div class="pv-reg-card">
     <div class="pv-reg-card-title">FDA MDR Guidance</div>
     <div class="pv-reg-card-subtitle">US FDA — how to report</div>
     <p>Covers MedWatch 3500A, MAUDE database submission, and mandatory vs voluntary reporting.</p>
-    <a class="pv-reg-card-link" href="https://www.fda.gov/medical-devices/medical-device-safety/medical-device-reporting-mdr-how-report-medical-device-problems" target="_blank" rel="noopener">fda.gov/medical-devices/medical-d...</a>
+    <a class="pv-reg-card-link" href="https://www.fda.gov/medical-devices/medical-device-safety/medical-device-reporting-mdr-how-report-medical-device-problems" target="_blank" rel="noopener">View on FDA.gov →</a>
   </div>
 </div>
 
@@ -252,6 +259,13 @@ Unlike PV where the MAH bears primary responsibility, MDR splits obligations acr
 </table>
 
 ## MDR reportability criteria
+
+Under 21 CFR Part 803, a device event is reportable when:
+
+- The device may have caused or contributed to **death** (30-day report)
+- The device may have caused or contributed to **serious injury** (30-day report)
+- The device **malfunctioned** AND would likely cause death or serious injury if the malfunction recurred (30-day report)
+- Remedial action is required to prevent unreasonable risk to public health (**5 work-day report**)
 
 <div class="pv-rule-callout">
   <div class="pv-callout-label">The Malfunction Rule — Unique to MDR</div>
@@ -334,7 +348,7 @@ The frameworks are parallel but they are not identical. Here are the five most i
 
 <div class="pv-diff-item">
   <h4>2. Who bears reporting responsibility</h4>
-  <p>In PV, the MAH bears primary reporting responsibility. Under 21 CFR Part 803, obligations are split across three distinct groups with separate timelines and submission targets.</p>
+  <p>In PV, the MAH bears primary reporting responsibility. Under 21 CFR Part 803, obligations are split across three distinct groups with separate timelines and submission targets. Device user facilities like hospitals have their own independent reporting obligations that do not exist in pharmaceutical PV.</p>
   <div class="pv-compare-cols">
     <div class="pv-compare-col pv-col-left">
       <div class="pv-compare-col-title">PV</div>
@@ -452,7 +466,7 @@ Despite their differences, PV and MDR share more than most professionals realize
 <div class="pv-combo-box">
   <h4>Combination products: where both worlds collide</h4>
   <p>Combination products sit at the exact intersection of PV and MDR. A drug-device combination must comply with both frameworks simultaneously. As combination products grow in the market, professionals with fluency in both systems will be increasingly rare and valuable.</p>
-  <div class="pv-combo-tags">[Drug-eluting stent] &nbsp; [Prefilled syringe] &nbsp; [Drug-device inhaler] &nbsp; [Insulin pen] &nbsp; [Transdermal patch] &nbsp; [Drug-coated balloon]</div>
+  <div class="pv-combo-tags"><span class="tag-pill">Drug-eluting stent</span> <span class="tag-pill">Prefilled syringe</span> <span class="tag-pill">Drug-device inhaler</span> <span class="tag-pill">Insulin pen</span> <span class="tag-pill">Transdermal patch</span> <span class="tag-pill">Drug-coated balloon</span></div>
 </div>
 
 <div class="pv-did-you-know">
@@ -612,7 +626,7 @@ The field is moving toward convergence. Combination products, AI-enabled devices
   <p><em>Patient safety is patient safety. The product changes. The mission does not.</em></p>
 </div>
 
-This article is the starting point. The regulations, the flowcharts, the translation dictionary, use them. Go deeper into 21 CFR Part 803. Read EU MDR 2017/745 Article 87. The frameworks are not as intimidating as they first appear, especially when you already speak the language underneath
+This article is the starting point. The regulations, the flowcharts, the translation dictionary, use them. Go deeper into 21 CFR Part 803. Read EU MDR 2017/745 Article 87. The frameworks are not as intimidating as they first appear, especially when you already speak the language underneath.
 
 ---
 
