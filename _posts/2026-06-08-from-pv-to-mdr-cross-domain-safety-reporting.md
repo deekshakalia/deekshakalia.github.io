@@ -33,7 +33,7 @@ By the end of this article, you will be able to map your existing PV knowledge d
   <p>"Pharmacovigilance is the science and activities relating to the detection, assessment, understanding and prevention of adverse effects or any other medicine-related problem." — World Health Organization</p>
 </div>
 
-## Key regulations governing PV
+### Key regulations governing PV
 
 <div class="pv-reg-cards">
   <div class="pv-reg-card">
@@ -63,7 +63,7 @@ By the end of this article, you will be able to map your existing PV knowledge d
   </p>
 </div>
 
-## The 4 elements of a valid ICSR
+### The 4 elements of a valid ICSR
 
 Not every report that lands in your safety database is a valid ICSR. Under ICH E2B and GVP Module VI, a case must contain at minimum four elements. Missing even one means the case cannot be processed or submitted.
 
@@ -103,7 +103,7 @@ Not every report that lands in your safety database is a valid ICSR. Under ICH E
   <p>All four elements must be present for a case to be considered valid under ICH E2B(R3) and GVP Module VI. If any one element is missing, the case is incomplete and must be followed up before processing or submission.</p>
 </div>
 
-## Seriousness and expectedness
+### Seriousness and expectedness
 
 An adverse drug reaction is classified as serious if it meets any one of the following six criteria:
 
@@ -138,7 +138,7 @@ An adverse drug reaction is classified as serious if it meets any one of the fol
   <p>A case must be BOTH serious AND unexpected (not listed in the RSI) to trigger a 15-day expedited report. A serious but expected event goes into periodic reporting. A non-serious event goes into periodic reporting regardless of expectedness. Expectedness is assessed against the RSI, typically the CCDS or local Product Information (PI).</p>
 </div>
 
-## The Argus ICSR processing workflow
+### The Argus ICSR processing workflow
 
 <div class="pv-workflow">
   <div class="pv-workflow-steps">
@@ -170,7 +170,7 @@ Medical Device Reporting (MDR) is the mandatory system by which manufacturers, i
   <p>"The MDR regulation contains mandatory requirements for manufacturers, importers, and device user facilities to report certain device-related adverse events and product problems to the FDA." — U.S. FDA, 21 CFR Part 803</p>
 </div>
 
-## Key regulations governing MDR
+### Key regulations governing MDR
 
 <div class="pv-reg-cards">
   <div class="pv-reg-card">
@@ -193,7 +193,7 @@ Medical Device Reporting (MDR) is the mandatory system by which manufacturers, i
   </div>
 </div>
 
-## Who must report under 21 CFR Part 803?
+### Who must report under 21 CFR Part 803?
 
 Unlike PV where the MAH bears primary responsibility, MDR splits obligations across three distinct groups:
 
@@ -221,7 +221,7 @@ Unlike PV where the MAH bears primary responsibility, MDR splits obligations acr
   <p>Hospitals and health care centers report deaths to FDA and manufacturer, serious injuries to manufacturer only, within 10 work days. Governed by 21 CFR 803.30.</p>
 </div>
 
-## EU MDR 2017/745 Article 87 — reporting timelines
+### EU MDR 2017/745 Article 87 — reporting timelines
 
 <table class="pv-mdr-timeline-table">
   <thead>
@@ -258,7 +258,7 @@ Unlike PV where the MAH bears primary responsibility, MDR splits obligations acr
   </tbody>
 </table>
 
-## MDR reportability criteria
+### MDR reportability criteria
 
 Under 21 CFR Part 803, a device event is reportable when:
 
@@ -277,7 +277,7 @@ Under 21 CFR Part 803, a device event is reportable when:
   <p>The reporting threshold is whether information "reasonably suggests" device involvement, not whether the device definitively caused the event. This mirrors the PV principle that all suspected reactions should be reported regardless of confirmed causality.</p>
 </div>
 
-## The MDR event reporting workflow
+### The MDR event reporting workflow
 
 <div class="pv-workflow">
   <div class="pv-workflow-steps">
