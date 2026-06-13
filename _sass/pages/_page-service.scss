@@ -1,13 +1,165 @@
 .page-service {
-  .content {
-    > p {
-      &:first-of-type {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        margin-bottom: 40px;
-        font-weight: regular;
-        color: rgb(104, 104, 104);
-      }
+  .page-service-hero {
+    background-color: $white-offset;
+    border-bottom: 1px solid darken($white-offset, 5%);
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+// Proof sections — experience & blog links at bottom of service pages
+.service-proof-section {
+  border-top: 1px solid #ede9f5;
+  padding-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-proof-header {
+  margin-bottom: 1.75rem;
+}
+
+.service-proof-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $primary;
+  background: lighten($primary, 52%);
+  border-radius: 3px;
+  padding: 3px 10px;
+  margin-bottom: 0.6rem;
+}
+
+.service-proof-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 0.3rem;
+}
+
+.service-proof-subtitle {
+  font-size: 0.9rem;
+  color: $steel;
+  margin-bottom: 0;
+}
+
+// Experience role cards
+.service-exp-card {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+
+    .service-exp-card-inner {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border-color: lighten($primary, 30%);
+    }
+
+    .service-exp-link {
+      color: darken($primary, 10%);
     }
   }
+}
+
+.service-exp-card-inner {
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.25rem 1.4rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.service-exp-role {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.service-exp-company {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 2px;
+}
+
+.service-exp-period {
+  font-size: 0.82rem;
+  color: $steel;
+  margin-bottom: 0.75rem;
+}
+
+.service-exp-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $primary;
+  margin-top: auto;
+  transition: color 0.2s ease;
+}
+
+// Blog post cards
+.service-post-card {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+
+    .service-post-card-inner {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border-color: lighten($primary, 30%);
+    }
+
+    .service-post-link {
+      color: darken($primary, 10%);
+    }
+  }
+}
+
+.service-post-card-inner {
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.25rem 1.4rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.service-post-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.service-post-desc {
+  font-size: 0.86rem;
+  color: $steel;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  flex: 1;
+}
+
+.service-post-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $primary;
+  margin-top: auto;
+  transition: color 0.2s ease;
 }

@@ -3,13 +3,82 @@ layout: default
 bodyClass: "page-service"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="intro intro-small page-service-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6 pt-6 pb-md-10">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
-        <h1 class="title">{{page.title}}</h1>
         <div class="content">{{content}}</div>
       </div>
     </div>
   </div>
+
+  {% if page.related_experience %}
+  <div class="row mt-4 mt-md-6">
+    <div class="col-12">
+      <div class="service-proof-section">
+        <div class="service-proof-header">
+          <span class="service-proof-eyebrow">Proven Experience</span>
+          <h2 class="service-proof-title">Where I've done this work</h2>
+          <p class="service-proof-subtitle">These are the roles where this expertise was built.</p>
+        </div>
+        <div class="row">
+          {% for exp in page.related_experience %}
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <a href="{{ exp.url }}" class="service-exp-card">
+              <div class="service-exp-card-inner">
+                <div class="service-exp-role">{{ exp.role }}</div>
+                <div class="service-exp-company">{{ exp.company }}</div>
+                <div class="service-exp-period">{{ exp.period }}</div>
+                <span class="service-exp-link">View full experience &rarr;</span>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.related_posts_links %}
+  <div class="row mt-4 mt-md-6 mb-4">
+    <div class="col-12">
+      <div class="service-proof-section">
+        <div class="service-proof-header">
+          <span class="service-proof-eyebrow">Related Writing</span>
+          <h2 class="service-proof-title">From the blog</h2>
+          <p class="service-proof-subtitle">Posts that go deeper on topics central to this service area.</p>
+        </div>
+        <div class="row">
+          {% for post_link in page.related_posts_links %}
+          {% assign post_lookup_url = post_link.url | append: "/" %}
+          {% assign matched_post = site.posts | where: "url", post_lookup_url | first %}
+          {% unless matched_post %}{% assign matched_post = site.posts | where: "url", post_link.url | first %}{% endunless %}
+          <div class="col-12 col-md-6 mb-3">
+            <a href="{{ post_link.url }}" class="service-post-card">
+              <div class="service-post-card-inner">
+                <div class="service-post-title">{{ post_link.title }}</div>
+                <div class="service-post-desc">{% if matched_post %}{{ matched_post.description }}{% endif %}</div>
+                <span class="service-post-link">Read post &rarr;</span>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
 </div>

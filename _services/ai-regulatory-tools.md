@@ -2,10 +2,18 @@
 title: "AI-Driven Regulatory Writing"
 date: 2024-09-01
 weight: 5
+description: "Applying prompt engineering and LLM-based tools to accelerate regulatory document creation while maintaining full compliance."
+related_experience:
+  - company: "Vivpro Corporation"
+    role: "Safety and Regulatory Analyst Intern"
+    period: "Jul 2025 – Dec 2025"
+    url: "/about#exp-vivpro-corp"
+related_posts_links:
+  - title: "ISO/IEC 42001: What It Means for Pharma and MedTech"
+    url: "/2026/06/06/iso-42001-pharma-medtech"
+  - title: "From PV to MDR: The Cross-Domain Safety Reporting Guide"
+    url: "/2026/06/08/from-pv-to-mdr-cross-domain-safety-reporting"
 ---
-
-Applying prompt engineering and LLM-based tools to accelerate regulatory document creation while maintaining full compliance.
-
 ## What I Do
 
 - Prompt engineering and LLM-based AI-assisted writing for CSRs, NISRs, ICDs, and PLPS documents

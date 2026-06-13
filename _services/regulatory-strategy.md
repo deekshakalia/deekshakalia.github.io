@@ -2,10 +2,22 @@
 title: "Regulatory Strategy & Compliance"
 date: 2024-09-01
 weight: 4
+description: "Strategic regulatory guidance across FDA, EMA, and ICH frameworks — from pre-submission planning to post-marketing compliance."
+related_experience:
+  - company: "Limax Biosciences"
+    role: "Regulatory Affairs Intern"
+    period: "Apr 2026 – Present"
+    url: "/about#exp-limax-biosciences"
+  - company: "Awinsa Life Sciences"
+    role: "Senior Pharmacovigilance Associate"
+    period: "Aug 2023 – Aug 2024"
+    url: "/about#exp-awinsa-life-sciences"
+related_posts_links:
+  - title: "DIA 2026 Global Annual Meeting"
+    url: "/2026/06/18/dia-2026-global-annual-meeting"
+  - title: "DIA 2025 Global Annual Meeting — Volunteer"
+    url: "/2025/06/19/dia-2025-global-annual-meeting-volunteer"
 ---
-
-Strategic regulatory guidance across FDA, EMA, and ICH frameworks — from pre-submission planning to post-marketing compliance.
-
 ## What I Do
 
 - Pre-submission strategy for medical devices (Class II & III) via PMA pathway
