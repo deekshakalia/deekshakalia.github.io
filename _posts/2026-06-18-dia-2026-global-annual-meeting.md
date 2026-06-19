@@ -8,6 +8,7 @@ tags:
   - Regulatory Affairs
   - Volunteering
   - Conference
+  - AI
 ---
 
 <div class="pv-section-label">Volunteering</div>

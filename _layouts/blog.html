@@ -23,11 +23,27 @@ bodyClass: "page-blog"
       <div class="tag-filter mb-5">
         <button class="tag-filter-btn active" data-tag="all">All</button>
         {% assign all_tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+        {% assign tag_counts = "" %}
         {% for tag in all_tags %}
-        {% assign tag_trimmed = tag | strip %}
-        {% if tag_trimmed != "" %}
-        <button class="tag-filter-btn" data-tag="{{ tag_trimmed }}">{{ tag_trimmed }}</button>
-        {% endif %}
+          {% assign tag_trimmed = tag | strip %}
+          {% if tag_trimmed != "" %}
+            {% assign count = 0 %}
+            {% for post in site.posts %}
+              {% if post.tags contains tag_trimmed %}
+                {% assign count = count | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+            {% assign padded = count | prepend: "0000" | slice: -4, 4 %}
+            {% assign tag_counts = tag_counts | append: padded | append: "|" | append: tag_trimmed | append: "," %}
+          {% endif %}
+        {% endfor %}
+        {% assign tag_count_list = tag_counts | split: "," | sort | reverse %}
+        {% for item in tag_count_list %}
+          {% if item != "" %}
+            {% assign parts = item | split: "|" %}
+            {% assign tag_name = parts[1] %}
+            <button class="tag-filter-btn" data-tag="{{ tag_name }}">{{ tag_name }}</button>
+          {% endif %}
         {% endfor %}
       </div>
 
