@@ -16,8 +16,16 @@ bodyClass: "page-post"
 </script>
 
 <div class="container pb-6 pt-4 pt-md-6 pb-md-10">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-9">
+  <div class="row">
+
+    <aside class="col-lg-3 d-none d-lg-block">
+      <div class="post-toc-sidebar" id="postTocSidebar">
+        <div class="post-toc-sidebar-header">On this page</div>
+        <nav class="post-toc-nav" id="postTocNav"></nav>
+      </div>
+    </aside>
+
+    <div class="col-12 col-md-10 offset-md-1 col-lg-9 offset-lg-0">
 
       {% if page.image %}
       <div class="post-hero-image mb-3">
@@ -51,12 +59,12 @@ bodyClass: "page-post"
         {% endif %}
       </div>
 
-      <details class="post-toc" id="postToc">
+      <details class="post-toc d-lg-none" id="postTocMobile">
         <summary class="post-toc-toggle">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="18" y2="18"/></svg>
           Table of Contents
         </summary>
-        <nav class="post-toc-nav" id="postTocNav"></nav>
+        <nav class="post-toc-nav" id="postTocNavMobile"></nav>
       </details>
 
       <div class="post-content content">
@@ -66,11 +74,19 @@ bodyClass: "page-post"
       <script>
         (function () {
           var headings = document.querySelectorAll('.post-content h2, .post-content h3');
-          if (headings.length < 2) { document.getElementById('postToc').style.display = 'none'; return; }
-          var nav = document.getElementById('postTocNav');
-          var ul = document.createElement('ul');
+          var tocElements = document.querySelectorAll('.post-toc, .post-toc-sidebar');
+
+          if (headings.length < 2) {
+            tocElements.forEach(function (el) { if (el) el.style.display = 'none'; });
+            return;
+          }
+
           headings.forEach(function (h) {
             if (!h.id) h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+          });
+
+          var ul = document.createElement('ul');
+          headings.forEach(function (h) {
             var li = document.createElement('li');
             li.className = h.tagName === 'H3' ? 'toc-h3' : 'toc-h2';
             var a = document.createElement('a');
@@ -79,7 +95,32 @@ bodyClass: "page-post"
             li.appendChild(a);
             ul.appendChild(li);
           });
-          nav.appendChild(ul);
+
+          var navMobile = document.getElementById('postTocNavMobile');
+          if (navMobile) navMobile.appendChild(ul.cloneNode(true));
+
+          var navDesktop = document.getElementById('postTocNav');
+          if (navDesktop) navDesktop.appendChild(ul.cloneNode(true));
+
+          var tocLinks = document.querySelectorAll('.post-toc-nav a');
+
+          function updateActiveToc() {
+            var current = headings[0];
+            headings.forEach(function (h) {
+              if (h.getBoundingClientRect().top <= 100) {
+                current = h;
+              }
+            });
+            tocLinks.forEach(function (link) {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + current.id) {
+                link.classList.add('active');
+              }
+            });
+          }
+
+          window.addEventListener('scroll', updateActiveToc);
+          updateActiveToc();
         })();
       </script>
 
