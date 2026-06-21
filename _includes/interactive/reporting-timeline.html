@@ -1,0 +1,29 @@
+<div class="pi-widget" data-interactive="reporting-timeline">
+  <div class="pi-widget-header">
+    <span class="pi-widget-label">Interactive: Adverse Event Reporting Timeline</span>
+  </div>
+  <div class="pi-controls">
+    <div class="pi-control-group">
+      <label class="pi-label" for="pi-seriousness">Seriousness</label>
+      <select id="pi-seriousness" class="pi-select" data-role="seriousness">
+        <option value="serious">Serious</option>
+        <option value="non-serious">Non-Serious</option>
+      </select>
+    </div>
+    <div class="pi-control-group">
+      <label class="pi-label" for="pi-expectedness">Expectedness</label>
+      <select id="pi-expectedness" class="pi-select" data-role="expectedness">
+        <option value="unexpected">Unexpected</option>
+        <option value="expected">Expected</option>
+      </select>
+    </div>
+    <div class="pi-deadline-badge-wrap">
+      <span class="pi-deadline-badge" data-role="deadline-badge">15 Day Expedited Report</span>
+    </div>
+  </div>
+  <svg class="pi-timeline-svg" data-role="timeline-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div class="pi-explanation">
+    <p class="pi-explanation-text" data-role="explanation"></p>
+    <p class="pi-citation" data-role="citation"></p>
+  </div>
+</div>

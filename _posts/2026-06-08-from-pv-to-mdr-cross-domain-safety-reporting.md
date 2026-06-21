@@ -2,13 +2,14 @@
 layout: post
 title: "From PV to MDR: The Cross-Domain Safety Reporting Guide Nobody Gave You"
 date: 2026-06-08
-description: "If you have processed an ICSR, you already understand more about medical device reporting than you think. Here is your translation guide."
+description: "Translate pharmacovigilance skills to medical device reporting. Covers ICSR validity, 21 CFR Part 803, EU MDR 2017/745, reporting timelines, signal detection, and cross-domain comparisons."
 image: /images/blog/pv_mdr.jpg
 tags:
   - Pharmacovigilance
   - Medical Device
   - Regulatory Affairs
   - Drug Safety
+interactive: true
 ---
 
 ## Introduction
@@ -137,6 +138,8 @@ An adverse drug reaction is classified as serious if it meets any one of the fol
   <div class="pv-callout-label">15-Day Expedited Report Rule — 21 CFR 314.80(c)(1)(i)</div>
   <p>A case must be BOTH serious AND unexpected (not listed in the RSI) to trigger a 15-day expedited report. A serious but expected event goes into periodic reporting. A non-serious event goes into periodic reporting regardless of expectedness. Expectedness is assessed against the RSI, typically the CCDS or local Product Information (PI).</p>
 </div>
+
+{% include interactive/reporting-timeline.html %}
 
 ### The Argus ICSR processing workflow
 
@@ -462,6 +465,8 @@ Despite their differences, PV and MDR share more than most professionals realize
     <p>Both FAERS and MAUDE are used for signal detection by FDA using the same analytical methodology.</p>
   </div>
 </div>
+
+{% include interactive/signal-detection.html %}
 
 <div class="pv-combo-box">
   <h4>Combination products: where both worlds collide</h4>

@@ -178,6 +178,10 @@ bodyClass: "page-post"
   </div>
 </div>
 
+{% if page.interactive %}
+<script src="{{ '/assets/js/post-interactive.js' | relative_url }}"></script>
+{% endif %}
+
 <button id="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
 
 <script>

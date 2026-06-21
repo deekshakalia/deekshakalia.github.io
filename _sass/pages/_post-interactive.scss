@@ -1,0 +1,302 @@
+// Post Interactive Components
+
+.pi-widget {
+  background: $white-offset;
+  border: 1.5px solid lighten($primary, 45%);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 12px rgba($primary, 0.07);
+}
+
+.pi-widget-header {
+  margin-bottom: 1rem;
+}
+
+.pi-widget-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $primary;
+  opacity: 0.8;
+}
+
+// ── Controls ──────────────────────────────────────────────────────────────
+
+.pi-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.pi-control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.pi-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $steel;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pi-select {
+  appearance: none;
+  background: $white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b21a8'/%3E%3C/svg%3E") no-repeat right 0.7rem center;
+  border: 1.5px solid lighten($primary, 38%);
+  border-radius: 6px;
+  color: $black;
+  cursor: pointer;
+  font-family: $font-family-base;
+  font-size: 0.9rem;
+  padding: 0.4rem 2rem 0.4rem 0.7rem;
+  transition: border-color 0.15s;
+
+  &:focus {
+    border-color: $primary;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary, 0.15);
+  }
+}
+
+.pi-deadline-badge-wrap {
+  align-self: flex-end;
+}
+
+.pi-deadline-badge {
+  background: #dc2626;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.85rem;
+  transition: background 0.25s;
+}
+
+// ── Timeline SVG ─────────────────────────────────────────────────────────
+
+.pi-timeline-svg {
+  display: block;
+  height: 90px;
+  width: 100%;
+  overflow: visible;
+}
+
+// ── Explanation ───────────────────────────────────────────────────────────
+
+.pi-explanation {
+  border-left: 3px solid lighten($primary, 38%);
+  margin-top: 0.85rem;
+  padding-left: 0.85rem;
+}
+
+.pi-explanation-text {
+  color: $black;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+
+.pi-citation {
+  color: $steel;
+  font-size: 0.75rem;
+  font-style: italic;
+  margin: 0;
+}
+
+// ── Signal Detection Layout ───────────────────────────────────────────────
+
+.pi-sd-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.pi-sd-table-wrap {
+  flex: 1 1 260px;
+}
+
+.pi-sd-table-title {
+  color: $steel;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.pi-sd-table {
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  width: 100%;
+
+  th, td {
+    border: 1.5px solid lighten($primary, 40%);
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+  }
+
+  thead th {
+    background: lighten($primary, 50%);
+    color: $primary-dark;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  tbody th {
+    background: lighten($primary, 52%);
+    color: $black;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+  }
+}
+
+.pi-cell-input {
+  background: $white;
+  border: 1.5px solid lighten($primary, 38%);
+  border-radius: 5px;
+  color: $black;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.25rem 0.4rem;
+  text-align: center;
+  width: 70px;
+
+  &:focus {
+    border-color: $primary;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary, 0.15);
+  }
+
+  /* hide spinner */
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button { opacity: 0.4; }
+}
+
+.pi-sd-hint {
+  color: $steel;
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.pi-sd-results {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.pi-sd-result-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pi-sd-result-label {
+  color: $steel;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  min-width: 80px;
+  text-transform: uppercase;
+}
+
+.pi-sd-result-value {
+  color: $black;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.pi-sd-result-ci {
+  color: $steel;
+  font-size: 0.78rem;
+}
+
+.pi-sd-chi2-row {
+  .pi-sd-result-value { font-size: 1rem; }
+}
+
+.pi-sd-chi2-note {
+  font-style: italic;
+}
+
+.pi-sd-bar-wrap {
+  margin: 0.25rem 0 0;
+}
+
+.pi-sd-bar-track {
+  background: #e5e7eb;
+  border-radius: 99px;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.pi-sd-bar-fill {
+  background: #16a34a;
+  border-radius: 99px;
+  height: 100%;
+  transition: width 0.3s, background 0.3s;
+  width: 0%;
+}
+
+.pi-sd-bar-threshold {
+  background: $primary-dark;
+  height: 18px;
+  left: 33.3%; // PRR=2 at 2/6 of bar scale
+  position: absolute;
+  top: -4px;
+  width: 2px;
+
+  &::after {
+    content: '';
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid $primary-dark;
+    left: -3px;
+    position: absolute;
+    top: -1px;
+  }
+}
+
+.pi-sd-bar-labels {
+  color: $steel;
+  display: flex;
+  font-size: 0.68rem;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.pi-signal-badge-wrap {
+  margin-top: 0.25rem;
+}
+
+.pi-signal-badge {
+  background: #16a34a;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  transition: background 0.25s;
+}
+
+.pi-sd-criteria-note {
+  color: $steel;
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}

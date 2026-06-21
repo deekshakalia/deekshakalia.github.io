@@ -1,0 +1,57 @@
+<div class="pi-widget" data-interactive="signal-detection">
+  <div class="pi-widget-header">
+    <span class="pi-widget-label">Interactive: PRR Signal Detection Explorer</span>
+  </div>
+  <div class="pi-sd-layout">
+    <div class="pi-sd-table-wrap">
+      <p class="pi-sd-table-title">2×2 Contingency Table</p>
+      <table class="pi-sd-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Drug of Interest</th>
+            <th>All Other Drugs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Target Event</th>
+            <td><input class="pi-cell-input" data-cell="a" type="number" min="1" value="25" aria-label="a: drug of interest + target event"></td>
+            <td><input class="pi-cell-input" data-cell="c" type="number" min="1" value="200" aria-label="c: other drugs + target event"></td>
+          </tr>
+          <tr>
+            <th>All Other Events</th>
+            <td><input class="pi-cell-input" data-cell="b" type="number" min="1" value="475" aria-label="b: drug of interest + other events"></td>
+            <td><input class="pi-cell-input" data-cell="d" type="number" min="1" value="9800" aria-label="d: other drugs + other events"></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="pi-sd-hint">Adjust the cell counts to see how the PRR and signal status change in real time.</p>
+    </div>
+    <div class="pi-sd-results">
+      <div class="pi-sd-result-row">
+        <span class="pi-sd-result-label">PRR</span>
+        <span class="pi-sd-result-value" data-role="prr-value">—</span>
+        <span class="pi-sd-result-ci" data-role="ci-value">—</span>
+      </div>
+      <div class="pi-sd-bar-wrap">
+        <div class="pi-sd-bar-track">
+          <div class="pi-sd-bar-fill" data-role="prr-bar"></div>
+          <div class="pi-sd-bar-threshold" title="Evans threshold: PRR ≥ 2"></div>
+        </div>
+        <div class="pi-sd-bar-labels">
+          <span>0</span><span>2 (threshold)</span><span>6+</span>
+        </div>
+      </div>
+      <div class="pi-sd-result-row pi-sd-chi2-row">
+        <span class="pi-sd-result-label">χ² (Yates)</span>
+        <span class="pi-sd-result-value" data-role="chi2-value">—</span>
+        <span class="pi-sd-result-ci pi-sd-chi2-note">(≥ 4 required for signal)</span>
+      </div>
+      <div class="pi-signal-badge-wrap">
+        <span class="pi-signal-badge" data-role="signal-badge">No Signal</span>
+      </div>
+      <p class="pi-sd-criteria-note">Evans criteria: PRR ≥ 2, χ² ≥ 4, and n(a) ≥ 3, all three must be met to flag a signal.</p>
+    </div>
+  </div>
+</div>
