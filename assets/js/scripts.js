@@ -7,3 +7,12 @@ menuTrigger.onclick = function() {
     menuTrigger.classList.toggle('is-active')
     body.classList.toggle('lock-scroll')
 }
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && menuContainer.classList.contains('open')) {
+        menuContainer.classList.remove('open');
+        menuTrigger.classList.remove('is-active');
+        body.classList.remove('lock-scroll');
+        menuTrigger.focus();
+    }
+});

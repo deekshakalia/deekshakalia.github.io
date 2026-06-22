@@ -1,3 +1,18 @@
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: $primary;
+  color: $white;
+  text-decoration: none;
+  font-weight: 600;
+  &:focus {
+    top: 0;
+  }
+}
+
 .page {
   display: flex;
   min-height: 100vh;

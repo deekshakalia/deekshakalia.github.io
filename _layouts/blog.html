@@ -53,7 +53,7 @@ bodyClass: "page-blog"
         <article class="post-card" data-tags="{{ tag_list }}">
           {% if post.image %}
           <a href="{{ post.url | relative_url }}" class="post-card-image-link">
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-image">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-image" loading="lazy">
           </a>
           {% endif %}
           <div class="post-card-body">

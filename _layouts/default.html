@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title and page.title != site.title %}{{ site.title }} | {{ page.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
   <!-- Google Fonts CDN -->
@@ -13,23 +12,15 @@
   <!-- Self host font -->
   <!-- <link rel="preload" href="{{ '/assets/fonts/playfair-display.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin> -->
   <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
-  
-  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
-  <meta name="author" content="Deeksha Kalia"/>
-  {% if page.meta_title %}<meta property="og:title" content="{{ page.meta_title }}"/>{% else %}<meta property="og:title" content="{{ page.title }}"/>{% endif %}
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="{{ url }}"/>
-  {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}"/>{% endif %}
-  {% if page.description %}<meta property="og:description" content="{{ page.description }}"/>{% endif %}
-  <meta name="twitter:card" content="summary"/>
-  {% if site.data.seo.meta_twitter_site %}<meta name="twitter:site" content="{{ site.seo.meta_twitter_site }}"/>{% endif %}
-  {% if site.data.seo.meta_twitter_creator %}<meta name="twitter:creator" content="{{ site.seo.meta_twitter_creator }}"/>{% endif %}
+  <title>{% if page.title and page.title != site.title %}Deeksha Kalia | {{ page.title }}{% else %}Deeksha Kalia{% endif %}</title>
+  {% seo %}
 
 </head>
 
 <body class='page {{layout.bodyClass}}'>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   {% include main-menu-mobile.html %}
-  <div id="wrapper" class="wrapper">
+  <div id="main-content" class="wrapper">
     {% include header.html headerClass='header-extra' %}
     {{content}}
   </div>

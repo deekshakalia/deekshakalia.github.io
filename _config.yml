@@ -1,16 +1,16 @@
 baseurl: '/'
+url: 'https://deekshakalia.github.io'
 permalink: pretty
 title: 'Deeksha Kalia'
+description: 'Regulatory Affairs Professional — Pharmacovigilance, Medical Devices, AI Regulatory Strategy'
+author: 'Deeksha Kalia'
+logo: /images/logo/logo.svg
+social:
+  name: Deeksha Kalia
+  links:
+    - https://www.linkedin.com/in/dr-deeksha-kalia/
 
-logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
-
-home: 
+home:
   limit_services: 6
 
 collections:
@@ -35,7 +35,9 @@ defaults:
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
-plugins: []
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
