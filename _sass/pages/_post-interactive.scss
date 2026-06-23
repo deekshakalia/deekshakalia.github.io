@@ -13,12 +13,15 @@
   margin-bottom: 1rem;
 }
 
-.pi-widget-label {
+.pi-widget h3.pi-widget-label {
+  margin: 0;
   font-size: 0.7rem;
   font-weight: 700;
+  line-height: inherit;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: $primary;
+  font-family: $font-family-base;
   opacity: 0.8;
 }
 
@@ -298,5 +301,311 @@
   font-size: 0.75rem;
   font-style: italic;
   line-height: 1.5;
+  margin: 0;
+}
+
+// ── GAIP Principles Checklist ──────────────────────────────────────────
+
+.gaip-progress-wrap {
+  margin-bottom: 1.25rem;
+}
+
+.gaip-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.gaip-progress-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: $black;
+}
+
+.gaip-progress-count {
+  font-size: 0.78rem;
+  color: $steel;
+}
+
+.gaip-progress-track {
+  height: 8px;
+  background: lighten($primary, 50%);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gaip-progress-fill {
+  height: 100%;
+  background: $primary;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.gaip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gaip-item {
+  border: 1px solid lighten($primary, 42%);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: lighten($primary, 30%);
+  }
+}
+
+.gaip-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0.85rem;
+  cursor: pointer;
+  user-select: none;
+  background: #fff;
+  transition: background 0.15s;
+
+  &:hover {
+    background: lighten($primary, 55%);
+  }
+}
+
+.gaip-item-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: $primary;
+  opacity: 0.6;
+  min-width: 1.6rem;
+}
+
+.gaip-item-title {
+  flex: 1;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: $black;
+}
+
+.gaip-item-status {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.55rem;
+  border-radius: 12px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background 0.25s, color 0.25s;
+
+  &[data-status="addressed"] {
+    background: #dcfce7;
+    color: #15803d;
+  }
+
+  &[data-status="progress"] {
+    background: #fef3c7;
+    color: #b45309;
+  }
+
+  &[data-status="none"] {
+    background: #f3f4f6;
+    color: #6b7280;
+  }
+}
+
+.gaip-item-body {
+  display: none;
+  padding: 0 0.85rem 0.85rem;
+}
+
+.gaip-item.is-open .gaip-item-body {
+  display: block;
+}
+
+.gaip-item-desc {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: $steel;
+  margin-bottom: 0.7rem;
+}
+
+.gaip-item-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.gaip-btn {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: $font-family-base;
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+.gaip-btn--addressed {
+  color: #15803d;
+  background: #dcfce7;
+  border-color: #bbf7d0;
+
+  &:hover { background: #bbf7d0; }
+  &.is-active {
+    background: #15803d;
+    color: #fff;
+    border-color: #15803d;
+  }
+}
+
+.gaip-btn--progress {
+  color: #b45309;
+  background: #fef3c7;
+  border-color: #fde68a;
+
+  &:hover { background: #fde68a; }
+  &.is-active {
+    background: #b45309;
+    color: #fff;
+    border-color: #b45309;
+  }
+}
+
+.gaip-btn--none {
+  color: #6b7280;
+  background: #f3f4f6;
+  border-color: #e5e7eb;
+
+  &:hover { background: #e5e7eb; }
+  &.is-active {
+    background: #6b7280;
+    color: #fff;
+    border-color: #6b7280;
+  }
+}
+
+.gaip-summary {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid lighten($primary, 42%);
+}
+
+.gaip-summary-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: $steel;
+  flex-wrap: wrap;
+}
+
+.gaip-summary-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 0.25rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.gaip-dot--green { background: #15803d; }
+.gaip-dot--amber { background: #b45309; }
+.gaip-dot--gray  { background: #9ca3af; }
+
+.gaip-recommendation {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid lighten($primary, 42%);
+  background: lighten($primary, 54%);
+  transition: border-color 0.3s, background 0.3s;
+
+  &[data-level="full"] {
+    border-color: #15803d;
+    background: #f0fdf4;
+  }
+
+  &[data-level="strong"] {
+    border-color: #15803d;
+    background: #f0fdf4;
+  }
+
+  &[data-level="building"] {
+    border-color: #b45309;
+    background: #fffbeb;
+  }
+
+  &[data-level="early"] {
+    border-color: #b45309;
+    background: #fffbeb;
+  }
+
+  &[data-level="started"] {
+    border-color: #9ca3af;
+    background: #f9fafb;
+  }
+
+  &[data-level="none"] {
+    border-color: #d1d5db;
+    background: #f9fafb;
+  }
+}
+
+.gaip-rec-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+
+  [data-level="full"] & {
+    background: #15803d;
+    color: #fff;
+  }
+
+  [data-level="strong"] & {
+    background: #16a34a;
+    color: #fff;
+  }
+
+  [data-level="building"] & {
+    background: #b45309;
+    color: #fff;
+  }
+
+  [data-level="early"] & {
+    background: #d97706;
+    color: #fff;
+  }
+
+  [data-level="started"] & {
+    background: #6b7280;
+    color: #fff;
+  }
+
+  [data-level="none"] & {
+    background: #9ca3af;
+    color: #fff;
+  }
+}
+
+.gaip-rec-text {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: $steel;
   margin: 0;
 }

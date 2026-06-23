@@ -9,6 +9,7 @@ tags:
   - Volunteering
   - Conference
   - AI
+interactive: true
 ---
 
 <div class="pv-section-label">Volunteering</div>
@@ -131,23 +132,9 @@ In January 2026, FDA's CDER and CBER jointly published, together with EMA, the G
   <div class="pv-callout-label">FDA + EMA Joint Publication January 2026</div>
   <p>Published jointly by FDA (CDER and CBER) and EMA, the GAIP document outlines 10 principles for industry and product developers using AI in the drug development cycle. The principles are designed to ensure reliability of information, patient safety, and regulatory excellence while allowing the full potential of AI to be realized.</p>
 </div>
-
-<div class="pv-criteria-box">
-  <ul>
-    <li>Human-centric by design</li>
-    <li>Risk-based approach</li>
-    <li>Adherence to standards</li>
-    <li>Clear context of use</li>
-    <li>Multidisciplinary expertise</li>
-    <li>Data governance and documentation</li>
-    <li>Model design and development practices</li>
-    <li>Risk-based performance assessment</li>
-    <li>Life cycle management</li>
-    <li>Clear, essential information</li>
-  </ul>
-</div>
-
 <a class="pv-reg-card-link" href="https://www.fda.gov/about-fda/artificial-intelligence-drug-development/guiding-principles-good-ai-practice-drug-development" target="_blank" rel="noopener">Read the full GAIP document →</a>
+
+{% include interactive/gaip-checklist.html %}
 
 <div class="pv-section-label">AI in Submissions Case Studies</div>
 
