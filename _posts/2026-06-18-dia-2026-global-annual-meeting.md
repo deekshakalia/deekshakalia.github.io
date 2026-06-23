@@ -129,9 +129,10 @@ In January 2026, FDA's CDER and CBER jointly published, together with EMA, the G
 
 <div class="pv-definition-callout">
   <div class="pv-callout-label">FDA + EMA Joint Publication January 2026</div>
-  <p>Published jointly by FDA (CDER and CBER) and EMA, the GAIP document outlines 10 principles for industry and product developers using AI in the drug development cycle. The principles are designed to ensure reliability of information, patient safety, and regulatory excellence while allowing the full potential of AI to be realized.</p>
+  <p>Published jointly by FDA (CDER and CBER) and EMA, the GAIP document outlines 10 principles for industry and product developers using AI in the drug development cycle. The principles are designed to ensure reliability of information, patient safety, and regulatory excellence while allowing the full potential of AI to be realized.
+  <a class="pv-reg-card-link" href="https://www.fda.gov/about-fda/artificial-intelligence-drug-development/guiding-principles-good-ai-practice-drug-development" target="_blank" rel="noopener">Read the full GAIP document →</a>
+  </p>
 </div>
-<a class="pv-reg-card-link" href="https://www.fda.gov/about-fda/artificial-intelligence-drug-development/guiding-principles-good-ai-practice-drug-development" target="_blank" rel="noopener">Read the full GAIP document →</a>
 
 {% include interactive/gaip-checklist.html %}
 
