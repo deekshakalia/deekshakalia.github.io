@@ -9,7 +9,6 @@ tags:
   - Volunteering
   - Conference
   - AI
-interactive: true
 ---
 
 <div class="pv-section-label">Volunteering</div>

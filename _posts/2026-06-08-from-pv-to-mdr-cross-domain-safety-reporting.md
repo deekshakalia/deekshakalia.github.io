@@ -9,7 +9,7 @@ tags:
   - Medical Device
   - Regulatory Affairs
   - Drug Safety
-interactive: true
+
 ---
 
 ## Introduction
