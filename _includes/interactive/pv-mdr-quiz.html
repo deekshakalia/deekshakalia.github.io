@@ -1,0 +1,25 @@
+<div class="pi-widget" data-interactive="pv-mdr-quiz">
+  <div class="pi-widget-header">
+    <h2 class="pi-widget-label" id="interactive-pv-mdr-quiz">Quiz: Test Your Knowledge</h2>
+  </div>
+  <div class="quiz-container" data-role="quiz-container">
+    <div class="quiz-progress-bar-wrap">
+      <div class="quiz-progress-bar" data-role="progress-bar"></div>
+    </div>
+    <div class="quiz-progress-label" data-role="progress-label">Question 1 of 6</div>
+
+    <div class="quiz-question-block" data-role="question-block">
+      <p class="quiz-question-text" data-role="question-text"></p>
+      <div class="quiz-options" data-role="options"></div>
+      <div class="quiz-feedback" data-role="feedback"></div>
+      <button class="quiz-next-btn" data-role="next-btn" style="display:none">Next question →</button>
+    </div>
+
+    <div class="quiz-results" data-role="results" style="display:none">
+      <div class="quiz-score-circle" data-role="score-circle"></div>
+      <p class="quiz-results-label" data-role="results-label"></p>
+      <button class="quiz-restart-btn" data-role="restart-btn">Retake quiz</button>
+    </div>
+  </div>
+</div>
+<script src="{{ '/assets/js/post-interactive-pv-mdr-quiz.js' | relative_url }}" async></script>

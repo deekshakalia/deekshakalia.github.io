@@ -633,7 +633,7 @@ The field is moving toward convergence. Combination products, AI-enabled devices
 
 This article is the starting point. The regulations, the flowcharts, the translation dictionary, use them. Go deeper into 21 CFR Part 803. Read EU MDR 2017/745 Article 87. The frameworks are not as intimidating as they first appear, especially when you already speak the language underneath.
 
----
+{% include interactive/pv-mdr-quiz.html %}
 
 ## References
 

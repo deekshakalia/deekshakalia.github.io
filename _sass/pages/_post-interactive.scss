@@ -13,6 +13,7 @@
   margin-bottom: 1rem;
 }
 
+.pi-widget h2.pi-widget-label,
 .pi-widget h3.pi-widget-label {
   margin: 0;
   font-size: 0.7rem;
@@ -608,4 +609,214 @@
   line-height: 1.55;
   color: $steel;
   margin: 0;
+}
+
+// ── PV / MDR Quiz ─────────────────────────────────────────────────────────
+
+[data-interactive="pv-mdr-quiz"] {
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+  border-color: #d1d5db;
+
+  .pi-widget-header {
+    background: $primary;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+
+    h2.pi-widget-label {
+      color: $white;
+      opacity: 1;
+    }
+  }
+}
+
+.pi-widget-sub {
+  font-size: 0.82rem;
+  color: $steel;
+  margin: 0.25rem 0 0;
+}
+
+.quiz-container {
+  padding: 1.25rem 1.5rem 1rem;
+}
+
+.quiz-progress-bar-wrap {
+  background: lighten($primary, 48%);
+  border-radius: 4px;
+  height: 5px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-progress-bar {
+  height: 100%;
+  background: $primary;
+  border-radius: 4px;
+  transition: width 0.35s ease;
+  width: 0%;
+}
+
+.quiz-progress-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: lighten($primary, 20%);
+  margin-bottom: 1rem;
+}
+
+.quiz-question-text {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: $secondary;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-option-btn {
+  background: $white;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.88rem;
+  color: #1a1a1a;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s;
+  font-family: $font-family-base;
+  line-height: 1.45;
+
+  &:hover:not(:disabled) {
+    border-color: $primary;
+    background: lighten($primary, 50%);
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &.quiz-option-correct {
+    border-color: #2e7d32;
+    background: #f0faf0;
+    color: #1b5e20;
+    font-weight: 600;
+  }
+
+  &.quiz-option-wrong {
+    border-color: #c62828;
+    background: #fff5f5;
+    color: #b71c1c;
+  }
+}
+
+.quiz-feedback {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  display: none;
+
+  &.quiz-feedback-correct {
+    display: block;
+    background: #f0faf0;
+    border-left: 3px solid #2e7d32;
+    color: #1b5e20;
+  }
+
+  &.quiz-feedback-wrong {
+    display: block;
+    background: #fff5f5;
+    border-left: 3px solid #c62828;
+    color: #7f1d1d;
+  }
+}
+
+.quiz-next-btn,
+.quiz-restart-btn {
+  display: inline-block;
+  background: $primary;
+  color: $white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: $font-family-base;
+  transition: background 0.18s;
+  margin-top: 0.25rem;
+
+  &:hover {
+    background: darken($primary, 8%);
+  }
+}
+
+.quiz-results {
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+}
+
+.quiz-score-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+
+  &.score-pass {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 3px solid #66bb6a;
+  }
+
+  &.score-retry {
+    background: #fff8e1;
+    color: #e65100;
+    border: 3px solid #ffa726;
+  }
+}
+
+.quiz-results-label {
+  font-size: 0.92rem;
+  color: $secondary;
+  margin-bottom: 1.25rem;
+}
+
+.quiz-results-breakdown {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.quiz-breakdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+
+  .bd-icon {
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+
+  &.bd-ok .bd-icon { color: #2e7d32; }
+  &.bd-miss .bd-icon { color: #c62828; }
+  &.bd-ok .bd-text { color: $steel; }
+  &.bd-miss .bd-text { color: $secondary; }
 }

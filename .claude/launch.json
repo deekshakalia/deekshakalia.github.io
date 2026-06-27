@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "jekyll",
-      "runtimeExecutable": "/usr/local/bin/bundle",
+      "runtimeExecutable": "/usr/bin/bundle",
       "runtimeArgs": ["exec", "jekyll", "serve", "--port", "4001", "--livereload"],
       "port": 4001,
       "cwd": "/Users/deekshakalia/Downloads/deekshakalia.github.io"
