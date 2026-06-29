@@ -389,6 +389,27 @@
 
     h2, h3, h4 {
       scroll-margin-top: 80px;
+      position: relative;
+
+      .heading-anchor {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 0.4em;
+        opacity: 0;
+        color: #aaa;
+        text-decoration: none;
+        transition: opacity 0.15s;
+        vertical-align: middle;
+
+        svg {
+          display: block;
+        }
+      }
+
+      &:hover .heading-anchor,
+      .heading-anchor:focus {
+        opacity: 1;
+      }
     }
 
     h2 {
