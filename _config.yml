@@ -30,6 +30,13 @@ defaults:
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
+# GitHub token and repo for the chatbot contact widget on the homepage.
+# When a visitor completes the chat, their message is posted to the GitHub Issues API,
+# creating a private issue in the repo below.
+# The token is injected at deploy time from the GitHub Actions secret.
+github_contact_token: ""
+github_contact_repo: "deekshakalia/deekshakalia.github.io-contact"
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
