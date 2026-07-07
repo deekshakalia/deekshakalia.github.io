@@ -35,6 +35,54 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
+// ── Typing loop for hero title ────────────────────────────
+
+(function() {
+    var el = document.getElementById('hero-title');
+    if (!el) return;
+
+    var titles = [
+      'Deeksha Kalia',
+      'Regulatory Affairs Professional',
+      'Pharmacovigilance Specialist',
+      'Drug Safety Expert',
+      'Medical Devices Regulatory Specialist',
+      'AI Regulatory Strategist'
+    ];
+    var titleIndex = 0;
+    var charIndex = 0;
+    var isDeleting = false;
+    var typeSpeed = 45;
+    var deleteSpeed = 25;
+    var pauseAfterType = 2000;
+    var pauseAfterDelete = 500;
+
+    function typeLoop() {
+      var currentText = titles[titleIndex];
+      if (!isDeleting) {
+        el.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentText.length) {
+          isDeleting = true;
+          setTimeout(typeLoop, pauseAfterType);
+          return;
+        }
+        setTimeout(typeLoop, typeSpeed);
+      } else {
+        el.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          isDeleting = false;
+          titleIndex = (titleIndex + 1) % titles.length;
+          setTimeout(typeLoop, pauseAfterDelete);
+          return;
+        }
+        setTimeout(typeLoop, deleteSpeed);
+      }
+    }
+    typeLoop();
+})();
+
 // ── Chat Widget ────────────────────────────────────────────
 
 (function() {

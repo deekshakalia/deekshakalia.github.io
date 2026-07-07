@@ -57,6 +57,25 @@
   }
 }
 
+.page-home .intro h1.hero-title {
+  font-size: 28px;
+  color: $black;
+  min-height: 1.6em;
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+  }
+}
+
+.hero-title::after {
+  content: " |";
+  animation: blink 0.8s step-end infinite;
+  color: $primary;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
