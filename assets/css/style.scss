@@ -172,6 +172,7 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+#chat-fab-close { display: none; }
 #chat-widget.open #chat-modal { display: flex; }
 #chat-widget.open #chat-fab-icon { display: none; }
 #chat-widget.open #chat-fab-close { display: block; }
