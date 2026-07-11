@@ -4,10 +4,7 @@ date: 2024-09-01
 weight: 5
 description: "Applying prompt engineering and LLM-based tools to accelerate regulatory document creation while maintaining full compliance."
 related_experience:
-  - company: "Vivpro Corporation"
-    role: "Safety and Regulatory Analyst Intern"
-    period: "Jul 2025 – Dec 2025"
-    url: "/about#exp-vivpro-corp"
+  - vivpro-corp
 related_posts_links:
   - title: "ISO/IEC 42001: What It Means for Pharma and MedTech"
     url: "/2026/06/06/iso-42001-pharma-medtech"

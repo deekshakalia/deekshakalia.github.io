@@ -33,17 +33,20 @@ bodyClass: "page-service"
           <p class="service-proof-subtitle">These are the roles where this expertise was built.</p>
         </div>
         <div class="row">
-          {% for exp in page.related_experience %}
+          {% for slug in page.related_experience %}
+          {% assign team_entry = site.team | where: "slug", slug | first %}
+          {% if team_entry %}
           <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <a href="{{ exp.url }}" class="service-exp-card">
+            <a href="/about#exp-{{ slug }}" class="service-exp-card">
               <div class="service-exp-card-inner">
-                <div class="service-exp-role">{{ exp.role }}</div>
-                <div class="service-exp-company">{{ exp.company }}</div>
-                <div class="service-exp-period">{{ exp.period }}</div>
+                <div class="service-exp-role">{{ team_entry.jobtitle }}</div>
+                <div class="service-exp-company">{{ team_entry.title }}</div>
+                <div class="service-exp-period">{{ team_entry.date_range }}</div>
                 <span class="service-exp-link">View full experience &rarr;</span>
               </div>
             </a>
           </div>
+          {% endif %}
           {% endfor %}
         </div>
       </div>

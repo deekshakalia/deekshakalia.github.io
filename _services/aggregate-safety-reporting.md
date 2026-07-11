@@ -4,18 +4,9 @@ date: 2024-09-01
 weight: 2
 description: "Preparation and review of periodic aggregate safety reports in compliance with FDA, ICH, and EMA requirements."
 related_experience:
-  - company: "Jubilant Generics"
-    role: "Executive Pharmacovigilance"
-    period: "Mar 2022 – Aug 2023"
-    url: "/about#exp-jubilant-generics"
-  - company: "Awinsa Life Sciences"
-    role: "Senior Pharmacovigilance Associate"
-    period: "Aug 2023 – Aug 2024"
-    url: "/about#exp-awinsa-life-sciences"
-  - company: "Vivpro Corporation"
-    role: "Safety and Regulatory Analyst Intern"
-    period: "Jul 2025 – Dec 2025"
-    url: "/about#exp-vivpro-corp"
+  - jubilant-generics
+  - awinsa-life-sciences
+  - vivpro-corp
 related_posts_links:
   - title: "From PV to MDR: The Cross-Domain Safety Reporting Guide"
     url: "/2026/06/08/from-pv-to-mdr-cross-domain-safety-reporting"

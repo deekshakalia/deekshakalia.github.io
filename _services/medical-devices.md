@@ -4,10 +4,7 @@ date: 2024-09-01
 weight: 6
 description: "Regulatory expertise spanning medical device submissions and clinical trial documentation under FDA frameworks."
 related_experience:
-  - company: "Limax Biosciences"
-    role: "Regulatory Affairs Intern"
-    period: "Apr 2026 – Present"
-    url: "/about#exp-limax-biosciences"
+  - limax-biosciences
 related_posts_links:
   - title: "From PV to MDR: The Cross-Domain Safety Reporting Guide"
     url: "/2026/06/08/from-pv-to-mdr-cross-domain-safety-reporting"
