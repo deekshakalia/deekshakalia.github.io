@@ -85,23 +85,68 @@ bodyClass: "page-home"
   </div>
 </div>
 
-      {% if site.data.features %}
+{% if site.data.recommendations %}
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">
-
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" loading="lazy" /></div>
+      <div class="col-12 text-center mb-4">
+        <h2 class="recommendations-title">Recommendations</h2>
+        <p class="recommendations-subtitle">What colleagues and mentors say about working with me</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      {% for rec in site.data.recommendations %}
+      {% capture truncated %}{{ rec.quote | truncate: 130 }}{% endcapture %}
+      {% assign has_more = false %}
+      {% if rec.quote.size > 130 %}{% assign has_more = true %}{% endif %}
+      {% assign card_id = "rec-" | append: forloop.index0 %}
+      <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="recommendation-card">
+          {% if has_more %}
+          <input type="checkbox" class="recommendation-toggle visually-hidden" id="{{ card_id }}">
+          <label class="recommendation-clickable" for="{{ card_id }}">
+            <div class="recommendation-quote-wrap">
+              <p class="recommendation-quote recommendation-quote-truncated">{{ truncated }}</p>
+              <p class="recommendation-quote recommendation-quote-full">{{ rec.quote }}</p>
+              <span class="recommendation-read-more-label">Read more →</span>
+              <span class="recommendation-show-less-label">Show less ↑</span>
+            </div>
+          </label>
+          <a href="{{ rec.linkedin }}" class="recommendation-linkedin" target="_blank" rel="noopener">View on LinkedIn ↗</a>
+          <label class="recommendation-clickable" for="{{ card_id }}">
+            <div class="recommendation-footer">
+              <div class="recommendation-attribution">
+                <div class="recommendation-initials">{{ rec.initials }}</div>
+                <div>
+                  <span class="recommendation-author-name">{{ rec.name }}</span>
+                  <span class="recommendation-author-title">{{ rec.title }}</span>
+                </div>
+              </div>
+              <div class="recommendation-meta">
+                <span class="recommendation-relationship tag-pill">{{ rec.relationship }}</span>
+              </div>
+            </div>
+          </label>
+          {% else %}
+          <div class="recommendation-quote-wrap">
+            <p class="recommendation-quote">{{ rec.quote }}</p>
+          </div>
+          <div class="recommendation-footer">
+            <div class="recommendation-attribution">
+              <div class="recommendation-initials">{{ rec.initials }}</div>
+              <div>
+                <span class="recommendation-author-name">{{ rec.name }}</span>
+                <span class="recommendation-author-title">{{ rec.title }}</span>
+              </div>
+            </div>
+            <div class="recommendation-meta">
+              <span class="recommendation-relationship tag-pill">{{ rec.relationship }}</span>
+            </div>
+          </div>
           {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
         </div>
       </div>
       {% endfor %}
-
     </div>
   </div>
 </div>

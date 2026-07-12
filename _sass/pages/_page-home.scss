@@ -99,3 +99,179 @@
     font-weight: 600;
   }
 }
+
+// Recommendation cards
+.recommendations-title {
+  font-size: 1.6rem;
+  font-family: $font-family-heading;
+  font-weight: bold;
+  color: $black;
+  margin-bottom: 0.4rem;
+}
+
+.recommendations-subtitle {
+  color: $steel;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.recommendation-card {
+  background: $white;
+  border: 1px solid darken($white-offset, 4%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  position: relative;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border-color: lighten($primary, 30%);
+  }
+}
+
+.recommendation-quote-wrap {
+  flex: 1;
+}
+
+.recommendation-quote {
+  font-size: 0.88rem;
+  color: $steel;
+  line-height: 1.7;
+  margin: 0 0 0.4rem;
+  font-style: italic;
+}
+
+.recommendation-clickable {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-card > label.recommendation-clickable:first-of-type {
+  flex: 1;
+}
+
+.recommendation-clickable,
+.recommendation-linkedin {
+  // override default label/link underlines
+  text-decoration: none;
+  color: inherit;
+}
+
+.recommendation-read-more-label,
+.recommendation-show-less-label {
+  color: $primary;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  &:hover {
+    color: $primary-dark;
+    text-decoration: underline;
+  }
+}
+
+// Toggle: hide full quote and "Show less" by default
+.recommendation-quote-full {
+  display: none;
+}
+
+.recommendation-show-less-label {
+  display: none;
+}
+
+// Toggle: show full quote, hide truncated, swap labels, show LinkedIn link
+.recommendation-card:has(.recommendation-toggle:checked) {
+  .recommendation-quote-truncated {
+    display: none;
+  }
+
+  .recommendation-quote-full {
+    display: block;
+  }
+
+  .recommendation-read-more-label {
+    display: none;
+  }
+
+  .recommendation-show-less-label {
+    display: inline;
+  }
+
+  .recommendation-linkedin {
+    display: inline-block;
+  }
+}
+
+.recommendation-linkedin {
+  display: none;
+  font-size: 0.78rem;
+  color: $primary;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.5rem 0 0.1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.recommendation-footer {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid $white-offset;
+}
+
+.recommendation-attribution {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.recommendation-initials {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 50%;
+  background: $primary;
+  color: $white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: $font-family-heading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendation-author-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $black;
+  font-family: $font-family-heading;
+  display: block;
+  line-height: 1.3;
+}
+
+.recommendation-author-title {
+  font-size: 0.78rem;
+  color: $steel;
+  display: block;
+  line-height: 1.35;
+}
+
+.recommendation-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
+.recommendation-relationship {
+  font-size: 0.7rem;
+}
