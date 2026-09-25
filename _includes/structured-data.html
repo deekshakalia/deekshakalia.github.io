@@ -1,0 +1,63 @@
+{%- comment -%}
+  Person schema for Deeksha Kalia. Employment history is generated from the
+  _team collection (sorted by weight, 1 = most recent) so it stays in sync
+  with the About page timeline. Education mirrors _layouts/about.html.
+{%- endcomment -%}
+{%- assign experiences = site.team | sort: "weight" -%}
+{%- assign current = experiences | first -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Deeksha Kalia",
+  "url": "{{ site.url }}{{ site.baseurl | replace: '//', '/' }}",
+  "image": "{{ site.url }}/images/profile_photo.jpg",
+  "jobTitle": {{ current.jobtitle | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "worksFor": {
+    "@type": "Organization",
+    "name": {{ current.title | jsonify }}
+  },
+  "hasOccupation": [
+    {%- for exp in experiences %}
+    {
+      "@type": "Occupation",
+      "name": {{ exp.jobtitle | jsonify }},
+      "occupationLocation": {
+        "@type": "Place",
+        "name": {{ exp.location | jsonify }}
+      },
+      "skills": {{ exp.skills | join: ", " | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Northeastern University",
+      "description": "Master of Science — Regulatory Affairs"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "SGT University",
+      "description": "Bachelor of Dental Surgery (BDS)"
+    }
+  ],
+  "knowsAbout": [
+    "Regulatory Affairs",
+    "Medical Device Regulation",
+    "Pharmacovigilance",
+    "Drug Safety",
+    "Regulatory Documentation",
+    "FDA Submissions",
+    "EU MDR",
+    "ICH Guidelines",
+    "AI-Driven Regulatory Writing"
+  ],
+  "sameAs": [
+    {%- for link in site.social.links %}
+    {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

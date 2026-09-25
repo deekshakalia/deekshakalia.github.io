@@ -189,6 +189,9 @@
   .post-hero-img {
     width: 100%;
     height: auto;
+    // Reserve space before the image decodes so the box never collapses to
+    // zero height and the layout does not shift on load.
+    min-height: 220px;
     max-height: 400px;
     object-fit: contain;
     display: block;

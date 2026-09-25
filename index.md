@@ -8,7 +8,7 @@ intro_image_hide_on_mobile: true
 show_call_box: false
 ---
 
-<h1 class="hero-title" id="hero-title"></h1>
+<h1 class="hero-title" id="hero-title">Deeksha Kalia</h1>
 
 <div class="hero-badges">
   <span class="hero-badge">🎓 MS Regulatory Affairs · Northeastern University</span>

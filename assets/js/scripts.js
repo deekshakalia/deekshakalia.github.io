@@ -49,9 +49,11 @@ document.addEventListener('keydown', function(e) {
       'Medical Devices Regulatory Specialist',
       'AI Regulatory Strategist'
     ];
+    // The name is server-rendered inside the h1 so the heading is never empty
+    // for crawlers or screen readers; start the loop by deleting it.
     var titleIndex = 0;
-    var charIndex = 0;
-    var isDeleting = false;
+    var charIndex = titles[0].length;
+    var isDeleting = true;
     var typeSpeed = 45;
     var deleteSpeed = 25;
     var pauseAfterType = 2000;
@@ -80,7 +82,15 @@ document.addEventListener('keydown', function(e) {
         setTimeout(typeLoop, deleteSpeed);
       }
     }
-    typeLoop();
+    // Respect users who have asked for reduced motion: show the name, no loop.
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduceMotion && reduceMotion.matches) {
+      el.textContent = titles[0];
+      el.classList.add('hero-title-static');
+      return;
+    }
+
+    setTimeout(typeLoop, pauseAfterType);
 })();
 
 // ── Chat Widget ────────────────────────────────────────────

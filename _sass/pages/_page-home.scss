@@ -76,6 +76,17 @@
   50% { opacity: 0; }
 }
 
+// Reduced-motion users get the static name with no caret or blink.
+.hero-title-static::after {
+  content: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title::after {
+    animation: none;
+  }
+}
+
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
