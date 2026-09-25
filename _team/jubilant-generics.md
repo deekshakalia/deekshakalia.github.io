@@ -5,7 +5,7 @@ jobtitle: "Executive Pharmacovigilance"
 date_range: "Mar 2022 – Aug 2023"
 location: "Noida, India"
 skills: ["Argus Safety", "MedDRA", "WHODRUG", "SAE Processing", "PSURs", "PADERs", "eCTD Module 2", "EMA/MHRA Cases", "PubMed Literature Review"]
-weight: 4
+weight: 5
 ---
 
 - Collected, triaged, processed, and tracked 100+ serious adverse event (SAE) reports via Argus Safety, including narrative writing and MedDRA coding

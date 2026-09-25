@@ -5,7 +5,7 @@ jobtitle: "Senior Pharmacovigilance Associate"
 date_range: "Aug 2023 – Aug 2024"
 location: "Noida, India"
 skills: ["ICSR Processing", "MedDRA Coding", "PADER", "Veeva RIM", "Signal Analysis", "Literature Surveillance", "MedWatch", "Post-Marketing Surveillance", "Team Leadership"]
-weight: 3
+weight: 4
 ---
 
 - Led a team of 5 and oversaw safety profile management of 100+ drugs, focusing on oncology and chronic disease treatments with approved ANDA; ensured compliance with post-marketing surveillance requirements.

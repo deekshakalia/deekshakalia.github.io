@@ -4,6 +4,7 @@ date: 2024-09-01
 weight: 6
 description: "Regulatory expertise spanning medical device submissions and clinical trial documentation under FDA frameworks."
 related_experience:
+  - qmb
   - limax-biosciences
 related_posts_links:
   - title: "From PV to MDR: The Cross-Domain Safety Reporting Guide"

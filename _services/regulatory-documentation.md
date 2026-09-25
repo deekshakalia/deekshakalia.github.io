@@ -4,6 +4,7 @@ date: 2024-09-01
 weight: 3
 description: "Drafting and reviewing regulatory submission documents compliant with ICH, FDA, and EMA standards across the drug and device lifecycle."
 related_experience:
+  - qmb
   - vivpro-corp
   - jubilant-generics
 related_posts_links:

@@ -4,6 +4,7 @@ date: 2024-09-01
 weight: 2
 description: "Preparation and review of periodic aggregate safety reports in compliance with FDA, ICH, and EMA requirements."
 related_experience:
+  - qmb
   - jubilant-generics
   - awinsa-life-sciences
   - vivpro-corp

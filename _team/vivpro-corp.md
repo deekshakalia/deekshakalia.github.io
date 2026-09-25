@@ -5,7 +5,7 @@ jobtitle: "Safety and Regulatory Analyst Intern"
 date_range: "Jul 2025 – Dec 2025"
 location: "New Jersey, USA"
 skills: ["ICH E3", "CSR", "NISR", "ICD", "PLPS", "PADER", "Prompt Engineering", "AI-Assisted Writing", "FDA/EMA/ICH Compliance", "Veeva RIM"]
-weight: 2
+weight: 3
 ---
 
 - Served as Subject Matter Expert (SME) for regulatory and safety documentation, validating AI-generated content across 5+ regulatory documents per ICH, FDA, and EMA standards.

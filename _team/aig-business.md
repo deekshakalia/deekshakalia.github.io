@@ -5,7 +5,7 @@ jobtitle: "Data and Research Analyst"
 date_range: "Dec 2020 – Oct 2021"
 location: "Gurugram, India"
 skills: ["HIPAA Compliance", "Data Analysis", "Excel", "Data Visualization", "Healthcare Research", "Stakeholder Presentations"]
-weight: 5
+weight: 6
 ---
 
 - Worked under HIPAA compliance, supporting healthcare teams with data research and analysis

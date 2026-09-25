@@ -4,6 +4,7 @@ date: 2024-09-01
 weight: 4
 description: "Strategic regulatory guidance across FDA, EMA, and ICH frameworks — from pre-submission planning to post-marketing compliance."
 related_experience:
+  - qmb
   - limax-biosciences
   - awinsa-life-sciences
 related_posts_links:

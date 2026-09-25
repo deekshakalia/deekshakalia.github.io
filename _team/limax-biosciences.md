@@ -5,7 +5,7 @@ jobtitle: "Regulatory Affairs Capstone"
 date_range: "Apr 2026 – Jun 2026"
 location: "Boston, MA"
 skills: ["FDA 21 CFR", "PMA Pathway", "BDD", "ISO 10993", "IDE Submissions", "Pre-Sub", "Medical Devices (Class II & III)", "Preclinical Study Design"]
-weight: 1
+weight: 2
 ---
 
 - Prepared FDA 21 CFR compliant pre-submission documentation (Pre-Sub) to support regulatory strategy for an innovative biomaterial-based medical device (Class II & III) via PMA pathway.
