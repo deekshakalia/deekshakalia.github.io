@@ -1,7 +1,7 @@
 ---
 title: "Regulatory Strategy & Compliance"
 date: 2024-09-01
-weight: 4
+weight: 3
 description: "Strategic regulatory guidance across FDA, EMA, and ICH frameworks — from pre-submission planning to post-marketing compliance."
 related_experience:
   - qmb

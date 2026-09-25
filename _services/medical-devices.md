@@ -1,7 +1,7 @@
 ---
 title: "Medical Devices & Clinical Trials"
 date: 2024-09-01
-weight: 6
+weight: 1
 description: "Regulatory expertise spanning medical device submissions and clinical trial documentation under FDA frameworks."
 related_experience:
   - qmb

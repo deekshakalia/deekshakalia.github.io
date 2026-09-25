@@ -1,8 +1,8 @@
 ---
 title: "Aggregate Safety Reporting"
 date: 2024-09-01
-weight: 2
-description: "Preparation and review of periodic aggregate safety reports in compliance with FDA, ICH, and EMA requirements."
+weight: 6
+description: "Preparation and review of periodic aggregate safety reports across drugs and medical devices, in compliance with FDA, ICH, EMA, and EU MDR requirements."
 related_experience:
   - qmb
   - jubilant-generics
@@ -21,3 +21,4 @@ related_posts_links:
 - Managed submission workflows and version control through Veeva RIM
 - Authored Module 2 summaries: Clinical Overviews (CO), Nonclinical Overviews (NCO), and Clinical Expert Statements in eCTD format
 - Systematic PubMed literature reviews for safety evaluations and signal detection
+- Device-side periodic reporting, including medical device reporting (MDR) assessment of incidents and complaints, and annual report preparation

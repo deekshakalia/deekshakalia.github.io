@@ -1,7 +1,7 @@
 ---
 title: "Regulatory Documentation"
 date: 2024-09-01
-weight: 3
+weight: 5
 description: "Drafting and reviewing regulatory submission documents compliant with ICH, FDA, and EMA standards across the drug and device lifecycle."
 related_experience:
   - qmb

@@ -1,7 +1,7 @@
 ---
 title: "AI-Driven Regulatory Writing"
 date: 2024-09-01
-weight: 5
+weight: 2
 description: "Applying prompt engineering and LLM-based tools to accelerate regulatory document creation while maintaining full compliance."
 related_experience:
   - vivpro-corp

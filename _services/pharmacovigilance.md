@@ -1,7 +1,7 @@
 ---
-title: "Pharmacovigilance"
+title: "Pharmacovigilance & Drug Safety"
 date: 2024-09-01
-weight: 1
+weight: 4
 description: "End-to-end case processing and safety surveillance across global regulatory frameworks."
 related_experience:
   - awinsa-life-sciences
